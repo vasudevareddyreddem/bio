@@ -1,7 +1,7 @@
 <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 col-sm-6 margin30">
+                    <div class="col-md-3 col-sm-6 margin30">
                      <h3 class="">FOLLOW US</h3>
                         <ul class="list-unstyled">
                             
@@ -14,13 +14,13 @@
                         </ul>
                     </div>
                    
-                    <div class="col-md-2 col-sm-6 margin30">
+                    <div class="col-md-3 col-sm-6 margin30">
                         <h3>QUICK LINKS</h3>
                         <ul class="list-unstyled">
                              <li><a href="<?php echo base_url('journals'); ?>">Journals</a></li>
                              <li><a href="<?php echo base_url('contactus'); ?>">Contact Us</a></li>
-                             <li><a href="<?php echo base_url('conference'); ?>">Conferences</a></li>
-                             <li><a href="<?php echo base_url('video-article'); ?>">Video Article</a></li>
+                             <li><a href="<?php echo base_url('aboutus'); ?>">About Us</a></li>
+                             <li><a href="<?php echo base_url('ebooks'); ?>">E-books</a></li>
                              <li><a href="<?php echo base_url('menuscript'); ?>">Submit Manuscript</a></li>
                            
                         </ul>
@@ -29,28 +29,22 @@
 					<div class="col-md-3 col-sm-6 margin30">
                         <h3>Contact Address	</h3>
 						<ul class="list-unstyled">
-						<li><a href="#">GRF Publishers Level 13/114 William Street, Melbourne VIC 3000 Australia</a></li>
+						<li><a href="#">Bibliotics Journals , 10039 Sierra Grace Ln, Houston, TX-77089,USA</a></li>
 						</ul>
                       
                     </div>
 					<div class="col-md-3 col-sm-6 margin30">
                         <h3>Contact Information	</h3>
                         <ul class="list-unstyled">
-                             <li><a ><i class="fa fa-volume-control-phone" aria-hidden="true"></i>&nbsp; +61 385184040</a></li>
+                             <li><a ><i class="fa fa-volume-control-phone" aria-hidden="true"></i>&nbsp; +1-832-708-3646</a></li>
                              <!--<li><a ><i class="fa fa-fax" aria-hidden="true"></i>&nbsp; **********</a></li>-->
-                             <li><a ><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; Contact@grfpublishers.org</a></li>
-                             <li><a >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Support@grfpublishers.org</a></li>
-							   <li><a ><i class="fa fa-globe" aria-hidden="true"></i></i>&nbsp; www.grfpublishers.com</a></li>
+                             <li><a ><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp; contact@bibliotics.com</a></li>
+							   <li><a ><i class="fa fa-globe" aria-hidden="true"></i></i>&nbsp; www.bibliotics.org</a></li>
                            
                            
                         </ul>
                     </div> 
-					<div class="col-md-2 col-sm-6 margin30">
-                        <h3>Open Access Licence</h3>
-                        <ul class="list-unstyled">
-                           <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license"  target="_blank" style="color:#bbb ;" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-                        </ul>
-                    </div> 
+					
                 </div>
             </div>
         </footer><!--footer-->

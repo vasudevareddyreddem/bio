@@ -1,8 +1,8 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>by</b> GRF Publishers 
+      <b>by</b> Bibliotics Journals 
     </div>
-    <strong>GRF Publishers Admin </strong>
+    <strong>Bibliotics Journals Admin </strong>
   </footer>
 
 !-- jQuery UI 1.11.4 -->

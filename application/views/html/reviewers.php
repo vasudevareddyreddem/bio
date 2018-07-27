@@ -30,7 +30,7 @@
 					</div>
 					
 					<div class="lis-sty-none">
-						<p><strong class="text-primary">GRF Publishers </strong>follows ‘Double-blind’ peerreviewing - conceals both the authors’ and reviewers’ identities, to avoid potential bias against prestigiousauthors and influential authors who are judged on the paper rather than their reputation.</p>
+						<p><strong class="text-primary">Bibliotics Journals </strong>follows ‘Double-blind’ peerreviewing - conceals both the authors’ and reviewers’ identities, to avoid potential bias against prestigiousauthors and influential authors who are judged on the paper rather than their reputation.</p>
 						<p>Almost all papers ubmitted to reviewers for consideration will ultimately be accepted for publication or rejection; occasionally an author will withdraw their paper prior to have taken a decision. The best papers are innovative, well-researched, well-written and an asset to the respective journal field as it can set up a milestone in the field of scientific progress.</p>
 					</div>
 					<h3>Reviewers Opinion</h3>
@@ -144,8 +144,8 @@
                     <div class="row">
                        
                        <div class="col-md-10 col-xs-12">
-                           <h3>GRF Publishers</h3>
-                           <p>Global Research Federation is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
+                           <h3>Bibliotics Journals</h3>
+                           <p>Bibliotics Journals is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
                        </div>  
                        <div class="col-md-2 col-xs-12 text-center padding_0">
                            <a href="<?php echo base_url('contactus'); ?>" class="btn btn-red btn-lg btn-block ">CONTACT US</a>

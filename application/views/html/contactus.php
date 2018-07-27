@@ -11,8 +11,8 @@
                            <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
                        </div>
                        <div class="col-xs-9">
-                       <strong>GRF Publishers</strong><br>
-                           Level 13/114 William Street,<br> Melbourne VIC 3000 <br> Australia
+                       <strong>Bibliotics Journals</strong><br>
+                           10039 Sierra Grace Ln, <br> Houston, TX-77089 <br> USA
                        </div>
                    </div>
                    
@@ -21,7 +21,7 @@
                             <i class="fa fa-phone"></i>   Phone
                         </div>
                         <div class="col-sm-9">
-                            +61 385184040
+                            +1-832-708-3646
                         </div>
                     </div>
                     
@@ -30,16 +30,10 @@
                             <i class="fa fa-envelope"></i>   Email
                         </div>
                         <div class="col-sm-9">
-                        <a href="mailto:Contact@grfpublishers.org">Contact@grfpublishers.org</a> 
-                        <a href="mailto:Support@grfpublishers.org">Support@grfpublishers.org</a> 
+                        <a href="mailto:contact@bibliotics.com">contact@bibliotics.com</a> 
                         </div>
                     </div><br>
-                    
-                    
-               
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.876508295534!2d144.9566948149695!3d-37.8163614419644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d9c100b80f5%3A0x52fa1b06d3e997b1!2sGRF+PUBLISHERS+PTY+LTD!5e0!3m2!1sen!2sin!4v1528723617161" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.205254239564!2d-95.21423768489599!3d29.56863068205784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86409a6c8c15e62b%3A0xdc9fef5ab4632d0c!2s10039+Sierra+Grace+Ln%2C+Houston%2C+TX+77089%2C+USA!5e0!3m2!1sen!2sin!4v1532708532029" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                </div>
 			   <div class="col-sm-7"> 
               <!-- action="contact-form-mail.php"-->                 

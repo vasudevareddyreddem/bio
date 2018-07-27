@@ -23,14 +23,14 @@
 					</p>
 					<br>
 					<h4>Three-year membership</h4>
-					<p>Member can submit unsolicited number of articles to any of the GRF Publishers 
-Member will get waiver on registration for any two.GRF Publishers
-Member will get a prestigious certificate of Three-year membership from GRF Publishers.
+					<p>Member can submit unsolicited number of articles to any of the Bibliotics Journals 
+Member will get waiver on registration for any two.Bibliotics Journals
+Member will get a prestigious certificate of Three-year membership from Bibliotics Journals.
 </p>
 					<br>
 					<h4> Five-year membership</h4>
-					<p>Member can submit unsolicited number of articles to any of the GRF Publishers
-Member will get a prestigious certificate of Five-year membership from GRF Publishers.
+					<p>Member can submit unsolicited number of articles to any of the Bibliotics Journals
+Member will get a prestigious certificate of Five-year membership from Bibliotics Journals.
 </p>
 					
 				<table align="left" cellspacing="0" cellpadding="0" border="0" class="table ">
@@ -174,8 +174,8 @@ Member will get a prestigious certificate of Five-year membership from GRF Publi
                     <div class="row">
                        
                        <div class="col-md-10 col-xs-12">
-                           <h3>GRF Publishers</h3>
-                           <p>Global Research Federation is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
+                           <h3>Bibliotics Journals</h3>
+                           <p>Bibliotics Journals is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
                        </div>  
                        <div class="col-md-2 col-xs-12 text-center padding_0">
                            <a href="<?php echo base_url('contactus'); ?>" class="btn btn-red btn-lg btn-block ">CONTACT US</a>

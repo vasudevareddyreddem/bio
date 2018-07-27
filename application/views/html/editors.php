@@ -11,7 +11,7 @@
 						<span class="text-success">Guidelines</span> 
 					</h3>
 					
-					<p >The main epigram of GRF Publishers is to spread scientific knowledge globally. The credibility of published articles completely depends on the effective peer reviewing process; hence, editors are the chief support for GRF Publishers. The Editorial board members of GRF Publishers are responsible for publishing quality manuscripts received from authors on concerned subjects.
+					<p >The main epigram of Bibliotics Journals is to spread scientific knowledge globally. The credibility of published articles completely depends on the effective peer reviewing process; hence, editors are the chief support for Bibliotics Journals. The Editorial board members of Bibliotics Journals are responsible for publishing quality manuscripts received from authors on concerned subjects.
 					</p>
 					<br>
 					<h3 class="">Roles   
@@ -38,7 +38,7 @@
 					<div class="lis-sty-none">
 					<ul>
 						<li>Editors can be promoted as senior editor and executive editor in the concerned journal based on their active participation and also based on their experience.</li>
-						<li>Editors will be given highest priority in all the events that are organized by GRF Publishers.</li>
+						<li>Editors will be given highest priority in all the events that are organized by Bibliotics Journals.</li>
 						<li>Based on their kind contributions and their efficiency, there is a chance to serve as a prominent member of the advisory board.</li>
 						<li>After one year of due course, Editor-in-Chief will be announced for every journal based on their active participation, expertise in the field, contribution towards the Journal and also their scientific contributions.</li>
 						<li>The review comments that are given by the editors will be strictly followed after which the authors will be requested to modify their manuscript according to the editor’s suggestions.</li>
@@ -156,8 +156,8 @@
                     <div class="row">
                        
                        <div class="col-md-10 col-xs-12">
-                           <h3>GRF Publishers</h3>
-                           <p>Global Research Federation is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
+                           <h3>Bibliotics Journals</h3>
+                           <p>Bibliotics Journals is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
                        </div>  
                        <div class="col-md-2 col-xs-12 text-center padding_0">
                            <a href="<?php echo base_url('contactus'); ?>" class="btn btn-red btn-lg btn-block ">CONTACT US</a>

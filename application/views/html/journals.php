@@ -5,35 +5,7 @@
                     <div class="row">
                       <div class="typography-section">
 						  <div class="container label-sty">
-							  <span class="head-journ">Journals</span> &nbsp;&nbsp;
-							  <!--  <span><a class="label label-warning" href="#">All</a></span> 
-							<span><a class="label label-primary" href="#">A</a></span>
-							  <span><a class="label label-primary" href="#">B</a></span>
-							  <span><a class="label label-primary" href="#">C</a></span>
-							  <span><a class="label label-primary" href="#">D</a></span>
-							  <span><a class="label label-primary" href="#">E</a></span>
-							  <span><a class="label label-primary" href="#">F</a></span>
-							  <span><a class="label label-primary" href="#">G</a></span>
-							  <span><a class="label label-primary" href="#">H</a></span>
-							  <span><a class="label label-primary" href="#">I</a></span>
-							  <span><a class="label label-primary" href="#">J</a></span>
-							  <span><a class="label label-primary" href="#">K</a></span>
-							  <span><a class="label label-primary" href="#">L</a></span>
-							  <span><a class="label label-primary" href="#">M</a></span>
-							  <span><a class="label label-primary" href="#">N</a></span>
-							  <span><a class="label label-primary" href="#">O</a></span>
-							  <span><a class="label label-primary" href="#">P</a></span>
-							  <span><a class="label label-primary" href="#">Q</a></span>
-							  <span><a class="label label-primary" href="#">R</a></span>
-							  <span><a class="label label-primary" href="#">S</a></span>
-							  <span><a class="label label-primary" href="#">T</a></span>
-							  <span><a class="label label-primary" href="#">U</a></span>
-							  <span><a class="label label-primary" href="#">V</a></span>
-							  <span><a class="label label-primary" href="#">W</a></span>
-							  <span><a class="label label-primary" href="#">X</a></span>
-							  <span><a class="label label-primary" href="#">Y</a></span>
-							  <span><a class="label label-primary" href="#">Z</a></span>-->
-							                
+							  <span class="head-journ">Journals List</span> &nbsp;&nbsp;
 							  
 						  </div>
 						</div>
@@ -113,8 +85,8 @@
                     <div class="row">
                        
                        <div class="col-md-10 col-xs-12">
-                           <h3>GRF PUBLISHERS </h3>
-                           <p>Global Research Federation is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
+                           <h3>Bibliotics Journals </h3>
+                           <p>Bibliotics Journals is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
                        </div>  
                        <div class="col-md-2 col-xs-12 text-center padding_0">
                            <a href="<?php echo base_url('contactus'); ?>" class="btn btn-red btn-lg btn-block ">CONTACT US</a>

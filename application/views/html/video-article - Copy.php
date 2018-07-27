@@ -15,9 +15,9 @@
 					<span class="text-success">Articles </span> 
 				</h3>
 				<br>
-				<p>GRF Publishers uniquely creates the opportunities for expanding its practical visual applicability of new electronic exposure through new technical methods approach in advanced research and science education by making and publishing videos of scientific experiments from the top laboratories, surgical operation treatments and clinical applications with innovative and recent developments at an international level.</p>
+				<p>Bibliotics Journals uniquely creates the opportunities for expanding its practical visual applicability of new electronic exposure through new technical methods approach in advanced research and science education by making and publishing videos of scientific experiments from the top laboratories, surgical operation treatments and clinical applications with innovative and recent developments at an international level.</p>
 				<p>By enabling scientists, educators and students to see the intricate details of cutting-edge experiments
-rather than read them in text articles, GRF Publishers increases research productivity and student
+rather than read them in text articles, Bibliotics Journals increases research productivity and student
 learning, saving their institutions time and money.</p>
 				
 				
