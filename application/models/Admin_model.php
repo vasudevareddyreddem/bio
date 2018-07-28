@@ -70,7 +70,7 @@ class Admin_model extends CI_Model
 	/* dashboad purpose*/
 	
 	public  function get_category_count($id){
-		$this->db->select('COUNT(c_id) AS count')->from('grf_journal_category');		
+		$this->db->select('COUNT(c_id) AS count')->from('Bibliotics_journal_category');		
 		$this->db->where('create_by', $id);
         return $this->db->get()->row_array();
 	}

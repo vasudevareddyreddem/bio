@@ -15,10 +15,10 @@ class Special_issue_model extends CI_Model
 		return $insert_id = $this->db->insert_id();
 	}
 	public function get_special_issue_list($id){
-		$this->db->select('special_issue.*,journals.title as journaltitle,grf_journal_category.category')->from('special_issue');
+		$this->db->select('special_issue.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('special_issue');
 
 		$this->db->join('journals ', 'journals.j_id = special_issue.journal_id', 'left');
-		$this->db->join('grf_journal_category ', 'grf_journal_category.c_id = special_issue.journal_cat_id', 'left');
+		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = special_issue.journal_cat_id', 'left');
 				
 		$this->db->where('special_issue.create_by',$id);
         return $this->db->get()->result_array();

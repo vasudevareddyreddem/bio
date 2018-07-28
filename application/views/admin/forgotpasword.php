@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Grf Admin</title>
+  <title>Bibliotics Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -22,7 +22,7 @@
 <body class="hold-transition login-page" style="background-image: url('<?php echo base_url(); ?>assets/vendor/admin/dist/img/bacimg.jpg');background-repeat: no-repeat;background-size: cover;">
 <div class="login-box">
   <div class="login-logo" style="color:#fff">
-    <b>Grf</b> Admin
+    <b>Bibliotics</b> Admin
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">

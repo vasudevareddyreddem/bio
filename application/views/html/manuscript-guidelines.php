@@ -57,12 +57,12 @@
 						<p >Respective Manuscript types must be written with the above mentioned structure format. Any of the mentioned structure missing will be resent to the author for further modifications.</p>
 						
 						<h4 class="">Figures & Tables</h4>
-						<p >GRF Publishing Group requires tables and figures to be submitted at the end of the manuscript. Please ensure that all the figures submitted comply with our Image integrity.</p>
+						<p >Bibliotics Publishing Group requires tables and figures to be submitted at the end of the manuscript. Please ensure that all the figures submitted comply with our Image integrity.</p>
 						<p >Figures submitted should be at least 300 dpi, submitted in Tiff, Giff or JPEG formats only. All the figures submitted must be compatible with clarity. It should be intelligible for the readers to understand related to all disciplines. Excessive colour and unnecessary details must be avoided. Allowable pixel size for the Figures is 800 pixels (Standard) and 1200 pixels (high resolution). All the figures submitted must be in standard or high resolution quality.</p>
 						<p >Figure legends must be short and mentioned below each figure. The respective Figure numbers must be mentioned in the body of the manuscript sequentially within round brackets.</p>
 						
 						<h4 class="">Tables</h4>
-						<p >GRF Publishing Group requires Tables to be small and presented in Table format. Pie diagrams, Charts etc are considered as "Figures". Tables presented in figure formats are not acceptable. Table legends must be mentioned above the Table. Tables must be provided at the end of the manuscript below figures. Symbols and Abbreviations used in the tables must be presented below the Table.</p>
+						<p >Bibliotics Publishing Group requires Tables to be small and presented in Table format. Pie diagrams, Charts etc are considered as "Figures". Tables presented in figure formats are not acceptable. Table legends must be mentioned above the Table. Tables must be provided at the end of the manuscript below figures. Symbols and Abbreviations used in the tables must be presented below the Table.</p>
 						<p ><strong>*Note: </strong> Small table denotes that it should fit normally into the windows. Else it should be added as a supplementary table.</p>
 						
 						<h4 class="">Equations and Formulas</h4>
@@ -73,7 +73,7 @@
 						<p >Supplementary information is usually provided as an essential background to the Article such as any example, large data sets, methods, calculations, etc. If the manuscript contains any Supplementary data the authors are asked to refer the supplementary data at an appropriate point in the main body of the manuscript. The supplementary information should not contain any figures. It may have Supplementary tables. They are published as raw dataset along with the manuscript.</p>
 						
 						<h4 class="">References</h4>
-						<p >GRF Publishing Group follows author-number system (Vancouver Style) where all the references including URLs are numbered successively within square brackets, in the same order of their appearance in the text. Examples are given below</p>
+						<p >Bibliotics Publishing Group follows author-number system (Vancouver Style) where all the references including URLs are numbered successively within square brackets, in the same order of their appearance in the text. Examples are given below</p>
 						<p ><strong>Journal Article with less than 6 authors:</strong> Karimi-Zarchi M, Peighmbari F, Karimi N, Rohi M, Chiti Z. A Comparison of 3 Ways of Conventional Pap Smear, Liquid-Based Cytology and Colposcopy vs Cervical Biopsy for Early Diagnosis of Premalignant Lesions or Cervical Cancer in Women with Abnormal Conventional Pap Test. Int J Biomed Sci. 2013; 9: 205-210.</p>		
 						<p ><strong>Journal Article with more than 6 authors: </strong>Henriques A, Arantes-Rodrigues R, Faustino-Rocha IA, Teixeira-Guedes IC, Pinho-Oliveira J, Talhada D, et al. The Effects of Whole Green Tea Infusion on Mouse Urinary Bladder Chemical Carcinogenesis. Iran J Basic Med Sci. 2014; 17: 145-148.</p>
 						<p ><strong>Book References: </strong>Gardner JG, Simmons MJ, Snustad PD. Principles of Genetics. 8th edn. New York: John Wiley & Sons. 2006</p>

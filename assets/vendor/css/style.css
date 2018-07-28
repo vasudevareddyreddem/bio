@@ -1338,7 +1338,7 @@ NAVBAR
  background-color: #00bcd4;
 }
 .bg_color2{
- background-color: #027b80;
+ background-color: #00bcd4;
  color:#fff;
 }
 .bg_color2 a{
@@ -1359,14 +1359,14 @@ NAVBAR
     margin-right: 0px;
     line-height: 1.42857143;
     border: 0px ;
-	background:#00bcd4 !important;
+	background:#027b80 !important;
 	color:#fff !important;
     border-radius: 0px !important;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #fff !important;
     cursor: default;
-    background-color: #00bcd4 !important;
+    background-color: #027b80 !important;
     border: none !important; 
     
 }

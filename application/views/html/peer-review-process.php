@@ -33,7 +33,7 @@
 					</p>
 					<p ><strong> Open peer:</strong> authors know who the reviewers are, and the reviewers know who the authors are. If the manuscript is accepted, the named reviewer reports are published alongside the article.
 					</p>
-					<p >GRF follows double blind peer review process- in this case neither authors nor reviewers know each otherâ€™s identities.</p>
+					<p >Bibliotics follows double blind peer review process- in this case neither authors nor reviewers know each otherâ€™s identities.</p>
                 </div>
             </div>
         </div>

@@ -107,6 +107,7 @@
                     </button>
                     
                 </div>
+				<div class="container ">
                 <div id="navbar" class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href="<?php echo base_url(); ?>" class="<?php if($c_url==base_url()){ echo "current"; } ?>">Home</a></li> 
@@ -124,13 +125,13 @@
 						  </ul>
 						</li>
                        
-                        <li ><a href="<?php echo base_url('conference'); ?>" class="<?php if($c_url==base_url('conference')){ echo "current"; } ?>">E-books</a></li>
+                        <li ><a href="<?php echo base_url('ebooks'); ?>" class="<?php if($c_url==base_url('ebooks')){ echo "current"; } ?>">E-books</a></li>
 						<li ><a href="<?php echo base_url('manuscript'); ?>" class="<?php if($c_url==base_url('manuscript')){ echo "current"; } ?>">Submit Manuscript</a></li>
 						<li ><a href="<?php echo base_url('contactus'); ?>" class="<?php if($c_url==base_url('contactus')){ echo "current"; } ?>"> Contact Us</a></li>
 
 
                     </ul>
-                    
+                   </div> 
                 </div><!--/.nav-collapse -->
             </div><!--/.container -->
         </nav><!--navigation end-->

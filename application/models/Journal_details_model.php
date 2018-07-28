@@ -9,7 +9,7 @@ class Journal_details_model extends CI_Model
 		$this->load->database("default");
 	}
 	public function get_journal_category_list($id){
-		$this->db->select('grf_journal_category.c_id,grf_journal_category.category')->from('grf_journal_category');		
+		$this->db->select('Bibliotics_journal_category.c_id,Bibliotics_journal_category.category')->from('Bibliotics_journal_category');		
         $this->db->where('create_by',$id);
 
 		return $this->db->get()->result_array();	
@@ -20,8 +20,8 @@ class Journal_details_model extends CI_Model
 	}
 	
 	public function get_all_journal_list_details($id){
-		$this->db->select('journals.*,grf_journal_category.category as cat_name')->from('journals');
-		$this->db->join('grf_journal_category ', 'grf_journal_category.c_id = journals.category', 'left');
+		$this->db->select('journals.*,Bibliotics_journal_category.category as cat_name')->from('journals');
+		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = journals.category', 'left');
 		$this->db->where('journals.create_by',$id);
 		$this->db->order_by('journals.j_id',"desc");
 		return $this->db->get()->result_array();	
@@ -120,9 +120,9 @@ class Journal_details_model extends CI_Model
 	}
 
 	public function get_article_in_press_list($id){
-		$this->db->select('journal_article_in_press.*,journals.title as journaltitle,grf_journal_category.category')->from('journal_article_in_press');
+		$this->db->select('journal_article_in_press.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('journal_article_in_press');
 		$this->db->join('journals ', 'journals.j_id = journal_article_in_press.journal_id', 'left');
-		$this->db->join('grf_journal_category ', 'grf_journal_category.c_id = journal_article_in_press.journal_cat_id', 'left');
+		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = journal_article_in_press.journal_cat_id', 'left');
 		$this->db->where('journal_article_in_press.create_by',$id);
 		return $this->db->get()->result_array();
 	}
@@ -149,9 +149,9 @@ class Journal_details_model extends CI_Model
         return $this->db->get()->result_array();
 	}
 		public  function get_all_article_list_for_issues($cat_id,$j_id,$year){
-		$this->db->select('journal_article_in_press.*,journals.title as journaltitle,grf_journal_category.category')->from('journal_article_in_press');		
+		$this->db->select('journal_article_in_press.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('journal_article_in_press');		
 		$this->db->join('journals ', 'journals.j_id = journal_article_in_press.journal_id', 'left');
-		$this->db->join('grf_journal_category ', 'grf_journal_category.c_id = journal_article_in_press.journal_cat_id', 'left');
+		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = journal_article_in_press.journal_cat_id', 'left');
 		$this->db->where('journal_article_in_press.journal_id', $j_id);
 		$this->db->where('journal_article_in_press.journal_cat_id', $cat_id);
 		$this->db->where('journal_article_in_press.year_of_article', $year);

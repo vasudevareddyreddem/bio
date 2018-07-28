@@ -34,7 +34,7 @@
 			<div>
 				<div style="background:none repeat scroll 0 0 #fff;color:#6e7179;font-size:16px;font-weight:300;line-height:24px;padding:10px 69px"> 			<p style="text-align:left">&nbsp;</p>
 				<p style="text-align:left">Dear Admin,</p>
-							<p><strong>Greetings from Grf! <img goomoji="263a" data-goomoji="263a" style="margin:0 0.2ex;vertical-align:middle;max-height:24px" alt="☺" src="https://mail.google.com/mail/e/263a" class="CToWUd"></strong></p>
+							<p><strong>Greetings from Bibliotics! <img goomoji="263a" data-goomoji="263a" style="margin:0 0.2ex;vertical-align:middle;max-height:24px" alt="☺" src="https://mail.google.com/mail/e/263a" class="CToWUd"></strong></p>
 						<table id="customers">
 						  <tr>
 							<th>Title</th>
@@ -83,7 +83,7 @@
 						  
 						</table>
 					 <p> Thanks &amp; Regards <br>
-						Grf</p>
+						Bibliotics</p>
 				</div>
 				<div style="clear:both"> </div>
 				<div style="background:none repeat scroll 0 0 #f2f2f2;color:#a5a5a5;font-size:10px;padding:20px"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

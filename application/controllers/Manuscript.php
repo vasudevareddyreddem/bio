@@ -50,6 +50,7 @@ class Manuscript extends CI_Controller {
 		'address'=>isset($post['address'])?$post['address']:'',
 		'message'=>isset($post['message'])?$post['message']:'',
 		'journel'=>isset($post['journel'])?$post['journel']:'',
+		'article_type'=>isset($post['article_type'])?$post['article_type']:'',
 		'abstract'=>isset($post['abstract'])?$post['abstract']:'',
 		'image'=>$image,
 		'create_at'=>date('Y-m-d H:i:s'),
@@ -63,8 +64,8 @@ class Manuscript extends CI_Controller {
 				$this->email->set_newline("\r\n");
 				$this->email->set_mailtype("html");
 				$this->email->from($post['email']);
-				$this->email->to('contact@grfpublishers.org');
-				$this->email->subject('Menuscript - Request');
+				$this->email->to('contact@bibliotics.org');
+				$this->email->subject('Manuscript - Request');
 				//$body = $this->load->view('email/menuscript',$data,TRUE);
 				if(isset($_FILES['image']['name']) && $_FILES['image']['name']!=''){
 					$pdfFilePath=base_url('assets/menuscript/'.$image);
@@ -80,9 +81,10 @@ class Manuscript extends CI_Controller {
 				'<br> Country :'.$post['country'].
 				'<br> Email :'.$post['email'].
 				'<br> Phone  number :'.$post['phone'].
-				'<br> Menuscript Title :'.$post['menuscript_title'].
+				'<br> Manuscript Title :'.$post['menuscript_title'].
 				'<br> Address :'.$post['address'].
 				'<br> Message :'.$post['message'].
+				'<br> Article type :'.$post['article_type'].
 				'<br> Journel :'.$post['journel'].
 				'<br> abstract :'.$post['abstract'];
 				//$this->email->attach($pdfFilePath);

@@ -43,7 +43,7 @@
 						<li>After one year of due course, Editor-in-Chief will be announced for every journal based on their active participation, expertise in the field, contribution towards the Journal and also their scientific contributions.</li>
 						<li>The review comments that are given by the editors will be strictly followed after which the authors will be requested to modify their manuscript according to the editor’s suggestions.</li>
 						<li>We promote all the articles of the Editors that are published in our journals, in various social networking groups from our end, increasing visibility for their works.</li>
-						<li>GRF journals consider editorials as a note to the young researchers and scholars.</li>
+						<li>Bibliotics journals consider editorials as a note to the young researchers and scholars.</li>
 						<li>Editors shall be honoured in position as chair/co-chair for any conferences organized by us and also the fee will be waived.</li>
 					
 					</ul>

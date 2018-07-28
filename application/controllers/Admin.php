@@ -81,7 +81,7 @@ class Admin extends CI_Controller {
 				$this->email->set_newline("\r\n");
 				$this->email->set_mailtype("html");
 				$this->email->from($post['email']);
-				$this->email->to('admin@grfpublishers.org');
+				$this->email->to('admin@Biblioticspublishers.org');
 				$this->email->subject('forgot - password');
 				$body = $this->load->view('email/forgot',$data,TRUE);
 				$this->email->message($body);

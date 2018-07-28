@@ -11,7 +11,7 @@
                             <div class="row ">
 						
 			<div class=" Welcome_txt fadeInLeft wow animated  " data-wow-duration="1000ms" data-wow-delay="1000ms">
-				<h3 class="">GRF    
+				<h3 class="">Bibliotics    
 					<span class="text-success">CONFERENCES </span> 
 				</h3>
 				<br>

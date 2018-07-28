@@ -80,13 +80,14 @@
             <div class="row">
 				<div class="col-md-9">
 					<div class="bg_color2">
-							<ul class="nav nav-tabs">
+						<ul class="nav nav-tabs">
 								<li class="active"><a onclick="show_boardmembers(1);" href="#tab1primary" data-toggle="tab">Home</a></li>
+																<li><a onclick="show_boardmembers(1);" href="#tab6primary" data-toggle="tab">Instructions</a></li>
+
 								<li><a onclick="show_boardmembers(0);" href="#tab2primary" data-toggle="tab"> Board Members</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab3primary" data-toggle="tab"> Article In Press</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab4primary" data-toggle="tab">Current Issue</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab5primary" data-toggle="tab">Archive</a></li>
-								<li><a onclick="show_boardmembers(1);" href="#tab6primary" data-toggle="tab">Article Process Fee</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab7primary" data-toggle="tab">Special Issue</a></li>
 								
 							</ul>
@@ -366,6 +367,7 @@
 							<div class="tab-pane fade" id="tab7primary">
 							<?php echo isset($special_issue['details'])?$special_issue['details']:'Coming Soon'; ?>
 							</div>
+							
 						</div>
 					</div>
 				</div>

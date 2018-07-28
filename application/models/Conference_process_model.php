@@ -14,10 +14,10 @@ class Conference_process_model extends CI_Model
 		return $insert_id = $this->db->insert_id();
 	}
 	public function get_conference_process_list($id){
-		$this->db->select('conference_process.*,journals.title as journaltitle,grf_journal_category.category')->from('conference_process');
+		$this->db->select('conference_process.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('conference_process');
 
 		$this->db->join('journals ', 'journals.j_id = conference_process.journal_id', 'left');
-		$this->db->join('grf_journal_category ', 'grf_journal_category.c_id = conference_process.journal_cat_id', 'left');
+		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = conference_process.journal_cat_id', 'left');
 				
 		$this->db->where('conference_process.create_by',$id);
         return $this->db->get()->result_array();

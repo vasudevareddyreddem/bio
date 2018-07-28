@@ -50,7 +50,7 @@ class Contactus extends CI_Controller {
 					$this->email->set_newline("\r\n");
 					$this->email->set_mailtype("html");
 				$this->email->from($post['email']);
-				$this->email->to('contact@grfpublishers.org');
+				$this->email->to('contact@bibliotics.org');
 				$this->email->subject('Contact us - Request');
 				//$body = $this->load->view('email/contactus.php',$data,true);
 				//$html = $this->load->view('email/orderconfirmation.php', $data, true); 
