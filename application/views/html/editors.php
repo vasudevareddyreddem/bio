@@ -11,46 +11,40 @@
 						<span class="text-success">Guidelines</span> 
 					</h3>
 					
-					<p >The main epigram of Bibliotics Journals is to spread scientific knowledge globally. The credibility of published articles completely depends on the effective peer reviewing process; hence, editors are the chief support for Bibliotics Journals. The Editorial board members of Bibliotics Journals are responsible for publishing quality manuscripts received from authors on concerned subjects.
+					<p >The Editors greatly contribute to the Journal prestige and consistently improve the Journal standards by handling thorough peer review. It is very important for the editor to choose the right reviewer for the enhancement of the manuscript quality. Review comments are considered, however the Editor’s decision remains final. All papers submitted follow peer review processing and it is the Editor’s responsibility to provide decision based on novelty and quality. The Editor should determine whether a submitted manuscript is appropriate for the journal. 
 					</p>
 					<br>
-					<h3 class="">Roles   
-						<span class="text-success">and </span> Responsibilities
-					</h3>
+					<h4 class="">Assigning Reviewers:   
+					</h4>
+					<p>
+					The Editor first evaluates the manuscripts received from the Editorial office. In exceptional cases where the manuscripts remain outstanding which is usually rare, the Editor may accept at this stage. Those rejected at this stage are either done so for plagiarism and/or scientifically flawed. The Editors need to provide the reasons to reject a manuscript as they will be returned to authors. If the author mentions any suggested peer reviewers, they need to be considered first. Editors should guide reviewers with the Reviewer guidelines and the Review form. The received review comments will be directed to the Editor for final decision by the Editorial office.
+					</p>
+					
+					<br>
+					<h4 class="">   Timelines
+					</h4>
 					<div class="lis-sty-none">
 					<ul>
-						<li> Actively look for the views of associate editors, authors, readers, reviewers and editorial board members about ways of improving their journal's content.</li>
-						<li>Reputation of our group is enhanced by the presence of eminent editors. They also must endeavour to set higher standards for the journal whenever possible.</li>
-						<li>Sustain initiatives to educate researchers and young scholars about publication policies and ethics.</li>
-						<li>Editorial board members are most welcome to give their valuable suggestions for organizational progress.</li>
-						<li>Editors can review submitted manuscripts based on their feasible time, if time does not allow reviewing the manuscript, editors can suggest other reviewers.</li>
-						<li>Editors will look after any confidential data regarding the task. If the author has used information of certain individuals, specifically in any of his medical or scientific records, the editorial team must look for written consent from the individual, for the record to qualify for publishing.</li>
-						<li>Grabbing editorial decisions at the right time and communicating in a clear manner.</li>
-						<li>The validity of the scientific facts stated must be checked and the criticism of the manuscript should be left open for all to decide.</li>
-						<li>The editorial board members must assure that published content is original. The reliability of the author's work is a must, so there must be proper citation and the original source of the content should be named.</li>
-						<li>The final decision regarding modification, acceptance, or rejection of a manuscript rests solely with the editor.</li>
+					<li> Editor to assign Reviewer: 3 days </li>
+					<li>  Reviewer to provide comments: 10 days  </li>
+					<li>  Editor to provide final decision: 3 days  </li>
 					</ul>
 					</div>
 					<br>
-					<h3 class="">   Benefits
-						<span class="text-success"> </span>
-					</h3>
-					<div class="lis-sty-none">
-					<ul>
-						<li>Editors can be promoted as senior editor and executive editor in the concerned journal based on their active participation and also based on their experience.</li>
-						<li>Editors will be given highest priority in all the events that are organized by Bibliotics Journals.</li>
-						<li>Based on their kind contributions and their efficiency, there is a chance to serve as a prominent member of the advisory board.</li>
-						<li>After one year of due course, Editor-in-Chief will be announced for every journal based on their active participation, expertise in the field, contribution towards the Journal and also their scientific contributions.</li>
-						<li>The review comments that are given by the editors will be strictly followed after which the authors will be requested to modify their manuscript according to the editor’s suggestions.</li>
-						<li>We promote all the articles of the Editors that are published in our journals, in various social networking groups from our end, increasing visibility for their works.</li>
-						<li>Bibliotics journals consider editorials as a note to the young researchers and scholars.</li>
-						<li>Editors shall be honoured in position as chair/co-chair for any conferences organized by us and also the fee will be waived.</li>
-					
-					</ul>
-					</div>
-					
-                   
-                </div>
+					<h4 class="">Decision Making:   
+					</h4>
+					<p>The decision made should be unbiased and the Editor will determine the disposition of the manuscript, based on remarks of the reviewers, and the Editor’s own assessment of the manuscript. In rare cases authors are allowed to contact the Editor if the amendments are unclear. The Editor should be sure about not disclosing the reviewer details. Punctuality in time should be maintained.
+					</p><br>
+					<h4 class="">Major Revision:   
+					</h4>
+					<p>
+					Major revisions are sent back to the author and the time line provided will be 10 days for revision. Review comments along with if any Editor comments will be sent to the authors for revision. Minor Revision: Minor revisions are sent back to the author and the time line provided will be 5-7 days for revision.Review comments along with if any Editor comments will be sent to the authors for revision.
+					</p>
+					<h4 class="">Accept with no changes:   
+					</h4>
+					<p>
+Manuscripts that are accepted without changes are accepted if the Editor accepts to publish. Editor’s Contribution to the Journal: The Editor should be active and participate in providing new ideas or suggestions to improve the standards of the Journal. The Editor should submit Perspectives (Editorial) twice a year to support the Journal issues and also provide an impact of the advancements happening around the globe as per their research interests. The Editor should encourage publication of peer-reviewed research, and technological advances in the path of enlightening new discoveries. The editor should encourage submission of quality articles to the journal by personally recruiting authors, assisting them with outreach, and ensuring the marketing plan is executed. The Editor should recruit high profi le reviewers for reviewer database using multiple sources, e.g., personal recommendations, Web databases, published choice review or anything as such. The Editorial office will always support Editors in any manner required.					</p>
+			          </div>
 				
 					
 				</div>

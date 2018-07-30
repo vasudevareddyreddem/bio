@@ -48,7 +48,7 @@
 											   <a href="<?php echo base_url('assets/article_in_press/'.$list['pdf_file']); ?>" target="_blank" class="btn btn-primary " style="font-size:12px;" download> <i class="fa fa-unlock-alt"></i>&nbsp; PDF</a>
 											</li>
 											<li>
-											   <a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank" class="btn btn-warning " style="font-size:12px;"> <i class="fa fa-code" aria-hidden="true"></i> HTML</a>
+											   <a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank" class="btn btn-warning " style="font-size:12px;"> <i class="fa fa-code" aria-hidden="true"></i> Abstract</a>
 											</li>
 											<li>
 											   <a href="javascript:void(0);" class="btn btn-success " style="font-size:12px;">  <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp; <?php echo date('M d ,Y',strtotime(htmlentities($list['create_at'])));?></a>
@@ -97,7 +97,7 @@
 			</div>
 			<div class="clearfix">&nbsp;</div>
 			
-			<div class="sidebar side-bar right-sidebar">
+			<!--<div class="sidebar side-bar right-sidebar">
 				<div class="widget sidebar-newsletter">
 				 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					     <div class="panel panel-default">
@@ -132,7 +132,7 @@
         </div>
 				</div>
 				</div>
-      </div>
+      </div>-->
 	
 	</div>
 		

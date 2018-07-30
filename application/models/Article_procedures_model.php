@@ -14,10 +14,10 @@ class Article_procedures_model extends CI_Model
 		return $insert_id = $this->db->insert_id();
 	}
 	public function get_article_procedures_list($id){
-		$this->db->select('article_procedures.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('article_procedures');
+		$this->db->select('article_procedures.*,journals.title as journaltitle,bibliotics_journal_category.category')->from('article_procedures');
 
 		$this->db->join('journals ', 'journals.j_id = article_procedures.journal_id', 'left');
-		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = article_procedures.journal_cat_id', 'left');
+		$this->db->join('bibliotics_journal_category ', 'bibliotics_journal_category.c_id = article_procedures.journal_cat_id', 'left');
 				
 		$this->db->where('article_procedures.create_by',$id);
         return $this->db->get()->result_array();

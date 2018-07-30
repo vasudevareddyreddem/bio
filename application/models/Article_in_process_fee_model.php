@@ -14,10 +14,10 @@ class Article_in_process_fee_model extends CI_Model
 		return $insert_id = $this->db->insert_id();
 	}
 	public function get_article_in_press_list($id){
-		$this->db->select('article_in_process_fee.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('article_in_process_fee');
+		$this->db->select('article_in_process_fee.*,journals.title as journaltitle,bibliotics_journal_category.category')->from('article_in_process_fee');
 
 		$this->db->join('journals ', 'journals.j_id = article_in_process_fee.journal_id', 'left');
-		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = article_in_process_fee.journal_cat_id', 'left');
+		$this->db->join('bibliotics_journal_category ', 'bibliotics_journal_category.c_id = article_in_process_fee.journal_cat_id', 'left');
 				
 		$this->db->where('article_in_process_fee.create_by',$id);
         return $this->db->get()->result_array();

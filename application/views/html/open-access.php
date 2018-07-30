@@ -5,7 +5,9 @@
            <div class="col-md-8">
 		  
                 <div class=" Welcome_txt fadeInLeft wow animated  " data-wow-duration="1000ms" data-wow-delay="1000ms">
-                  
+                  <h3 class="">Open    
+						<span class="text-success">Access</span> 
+					</h3>
 					
 					<p >Bibliotics is an independent open-access scientific publisher showcases innovative research and ideas aimed at improving health by linking research and practice to the benefit of society. It is committed to providing a 'peer reviewed' platform to outstanding researchers and scientists to exhibit their findings. It publishes original research, analyses and reviews, news, practice updates and thought-provoking editorials.</p>
 					

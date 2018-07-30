@@ -91,15 +91,57 @@
        
                     <div class="row">
                        
-                       <div class="col-md-10 col-xs-12">
-                           <h3>Bibliotics Journals</h3>
-                           <p>The journals, e-books and conferences are being published and organized in order to spread the
-information on the latest technological and scientific researches among the core
-group with the aim of disseminating information for the betterment of mankind.</p>
-                       </div>  
-                       <!--<div class="col-md-2 col-xs-12 text-center padding_0">
-                           <a href="#" class="btn btn-red btn-lg btn-block ">MORE INFO</a>
-                       </div>-->
+                       <div class="col-md-3 col-xs-12">
+                          <div class="row">
+								<div class="col-md-6 text-white">
+								<strong><b>Journlas List :</b></strong>
+								</div>
+								<div class="col-md-6 text-white">
+								<b>250</b>
+								</div>
+						  
+						  </div>
+
+						 </div> 
+						 <div class="col-md-3 col-xs-12">
+                          <div class="row">
+								<div class="col-md-6 text-white">
+								<strong><b>Journlas List :</b></strong>
+								</div>
+								<div class="col-md-6 text-white">
+								<b>30</b>
+								</div>
+						  
+						  </div>
+
+						 </div>
+						 <div class="col-md-3 col-xs-12">
+                          <div class="row">
+								<div class="col-md-6 text-white">
+								<strong><b>Article List :</b></strong>
+								</div>
+								<div class="col-md-6 text-white">
+								<b>12</b>
+								</div>
+						  
+						  </div>
+
+						 </div>  
+						 <div class="col-md-3 col-xs-12">
+                          <div class="row">
+								<div class="col-md-8 text-white">
+								<strong><b>Board Member List :</b></strong>
+								</div>
+								<div class="col-md-4 text-white">
+								<b>100</b>
+								</div>
+						  
+						  </div>
+
+						 </div> 
+						  
+						 
+                      
                        
                     </div>
                
@@ -107,250 +149,522 @@ group with the aim of disseminating information for the betterment of mankind.</
         </div>
         <div class="divide60"></div>
         <div class="container " >
-            <div class="row">
-           <div class="col-md-8">
-                <div class=" Welcome_txt fadeInLeft wow animated  " data-wow-duration="1000ms" data-wow-delay="1000ms">
-                  
-                    <h3>ABOUT US </h3>
-                    <p> Bibliotics publishes international, peer-reviewed science, medicine, and engineering journals. It is an Open Access platform to support scientific innovation and advancement in the research community by increasing access to peer-reviewed quality research articles.
-
-We host internationally-recognized, peer-reviewed journals to serve the scientific and medical community with validated and quality content across the broad range of disciplines, including medicine, clinical science, chemistry, and engineering. The Bibliotics Member Journals Editorial Board and Review Board ensures Bibliotics maintain the highest standards in scientific rigor. Additionally, all of the articles published with Bibliotics Central are permanently archived, providing unrestricted use and dissemination of the scientific information. All content is published under the Creative Commons Attribution License.</p>
-                   
-                </div>
-				<br>
-				<div class=" Welcome_txt fadeInUp wow animated  " data-wow-duration="1000ms" data-wow-delay="1000ms">
-                  
-                    <h3>Our Vision</h3>
-                    <p>Bibliotics encourages the advancement of high-quality research on the international stage by supporting the science and technology publishing and the unrestricted flow of scientific information through the Open Access platform.</p>
-                   
-                </div>
-				<br>
-				    
-				<div class="panel panel-primary">
-					  <div class="panel-heading clearfix">
-						<span class="pull-left"><h4 class="text-white">Latest Article</h4></span>
-						
-						<?php if(isset($article_list)&& count($article_list)>0){ ?>
-						<a  href="<?php echo base_url('Article/lists'); ?>" class="pull-right"> <span style="color:#fff"> View all</span>&nbsp;&nbsp; </a>
-						<?php } ?>
-					  </div>
-					 
-				</div>
-				<div class="clearfix">&nbsp;</div>
+	
 				
-				<?php if(isset($article_list)&& count($article_list)>0){ ?>
-				
-				<?php foreach($article_list as $list){ ?>
-				<div class="article">
-					   <div class="row">
-						  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							 <div class="article-head clearfix">
-								<span class="pull-left">
-								   <h4 class="text-white"><?php echo isset($list['article_type'])?$list['article_type']:''; ?></h4>
-								</span>
-							 </div>
-						  </div>
-						  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							 <div class="article-body clearfix">
-								<div class="row">
-								   <div class="col-lg-2 col-md-3 col-sm-2 col-xs-4 p0">
-									  <div class="article-view">
-										 <div class="tabl">
-											<img src="<?php echo base_url('assets/article_in_press/'.$list['image']); ?>" align="left" alt="<?php echo isset($list['title'])?$list['title']:''; ?>">
-										 </div>
-									  </div>
-								   </div>
-								   <div class="col-lg-10 col-md-9 col-sm-10 col-xs-8">
-									  <div class="article-details">
-										 <h4><a href="<?php echo base_url('journals'); ?>" target="_blank" style="color:#0062C4;"><?php echo isset($list['title'])?$list['title']:''; ?></a></h4>
-										 <!--<span class="name"><?php echo isset($list['author_name'])?$list['author_name']:''; ?></span>-->
-										 <h6><a href="#" target="_blank" style="color:#F60;"><?php echo isset($list['author_name'])?$list['author_name']:''; ?></a></h6>
-										 <p class="art-date"><a href="<?php echo base_url('journals'); ?>" ><?php echo isset($list['journaltitle'])?$list['journaltitle']:''; ?></a></p>
-									  </div>
-								   </div>
-								</div>
-								<div class="row">
-								   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									  <div class="get-here">
-										 <ul>
-											<li>
-											   <a href="<?php echo base_url('assets/article_in_press/'.$list['pdf_file']); ?>" target="_blank" class="btn btn-primary " style="font-size:12px;" download> <i class="fa fa-unlock-alt"></i>&nbsp; PDF</a>
-											</li>
-											<li>
-											   <a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank" class="btn btn-warning " style="font-size:12px;"> <i class="fa fa-code" aria-hidden="true"></i> HTML</a>
-											</li>
-											<li>
-											   <a href="javascript:void(0);" class="btn btn-success " style="font-size:12px;">  <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp; <?php echo date('M d ,Y',strtotime(htmlentities($list['create_at'])));?></a>
-											</li>
-											<li>
-											</li>
-										 </ul>
-									  </div>
-								   </div>
-								</div>
-							 </div>
-						  </div>
-					   </div>
+               
+            
+		<div class="row">
+		
+                   <div class="text-center">
+					  <h2 class="" style="padding:0px;margin:0px;">Latest Articles    
+					</h2>
+					<div  style="position:relative ;" class="">
+												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
+												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
+											</div>
+											<div class="clearfix">&nbsp;</div>
 					</div>
+					 
+				</div>                     
+                <div class="col-md-4 mt20">
+				
+		
+                    <article class="blog-grid margin-b-10 article">
+                                 <div class="blog-grid-box-shadow">
+                                    <div class="blog-grid-content text-center" style="padding:20px;">
+										<em style="font-size:20px">Research Article </em><br>
+										<em style="font-size:20px">J Health Inform Mang 2018</em><br>
+										<em style="font-size:20px">10.4172/JHM.1000109</em>
+										<div class="clearfix">&nbsp;</div>
+										<div style="position:relative ;" class="">
+												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
+												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
+											</div>
+											<div class="clearfix">&nbsp;</div>
+                                         <h3>
+                                        
+									
+                                     </h3></div>
+										
+                                        <h4>
+										 <a class="blog-grid-title-link" style="color:#5db1a5" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+                                        <div class="clearfix">&nbsp;</div>
+									
+                                   <div class="blog-grid-supplemental">
+										 
+ 											<a href="#" class="btn btn-warning  text-white" style="font-size:12px;"" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
+											<a href="#" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
+							
+										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
+										<div class="clearfix">&nbsp;</div>
+										<div>
+										<img src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										</div>
+										
+										
+                                     </div>
+                                     </div>
+                                     </div>
+                                
+                            </article>
+				 
+					 
+ 					 
+                </div>
+				<div class="col-md-4 mt20">
+				
+		
+                    <article class="blog-grid margin-b-10 article">
+                                 <div class="blog-grid-box-shadow">
+                                    <div class="blog-grid-content text-center" style="padding:20px;">
+										<em style="font-size:20px">Research Article </em><br>
+										<em style="font-size:20px">J Health Inform Mang 2018</em><br>
+										<em style="font-size:20px">10.4172/JHM.1000109</em>
+										<div class="clearfix">&nbsp;</div>
+										<div style="position:relative ;" class="">
+												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
+												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
+											</div>
+											<div class="clearfix">&nbsp;</div>
+                                         <h3>
+                                        
+									
+                                     </h3></div>
+										
+                                        <h4>
+										 <a class="blog-grid-title-link" style="color:#5db1a5" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+                                        
+									                                        <div class="clearfix">&nbsp;</div>
 
+                                   <div class="blog-grid-supplemental">
+										 
+ 											<a href="#" class="btn btn-warning  text-white" style="font-size:12px;"" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
+											<a href="#" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
+							
+										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
+										<div class="clearfix">&nbsp;</div>
+										<div>
+										<img src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										</div>
+										
+										
+                                     </div>
+                                     </div>
+                                     </div>
+                                
+                            </article>
+				 
+					 
+ 					 
+                </div>
+				<div class="col-md-4 mt20">
 				
-				<?php } ?>
-				<?php } ?>
-				
-				
-				
-				
-                
+		
+                    <article class="blog-grid margin-b-10 article">
+                                 <div class="blog-grid-box-shadow">
+                                    <div class="blog-grid-content text-center" style="padding:20px;">
+										<em style="font-size:20px">Research Article </em><br>
+										<em style="font-size:20px">Reddem vasudevareddy </em><br>
+										<em style="font-size:20px">2018 july 12</em>
+										<div class="clearfix">&nbsp;</div>
+										<div style="position:relative ;" class="">
+												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
+												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
+											</div>
+											<div class="clearfix">&nbsp;</div>
+                                         <h3>
+                                        
+									
+                                     </h3></div>
+										
+                                        <h4>
+										 <a class="blog-grid-title-link" style="color:#5db1a5" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+                                        
+									                                        <div class="clearfix">&nbsp;</div>
 
-           </div>
-		   <div class="col-md-4 mt20">
-   <div class="sidebar side-bar right-sidebar">
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Latest Updates Scrolling</h3>
-         <div class="cp-newsletter-holder" id="pubmed">
-            <marquee class="pubmed-articles" align="top" behavior="scroll" onmouseout="this.start();" onmouseover="this.stop();" direction="up" scrollamount="2" style="padding: 10px 0px 10px 0px;height: 200px;background: #f5f5f5;overflow:hidden;">
-              <?php if(isset($lastest_updates_list)&& count($lastest_updates_list)>0){ ?>
+                                   <div class="blog-grid-supplemental">
+										 
+ 											<a href="#" class="btn btn-warning  text-white" style="font-size:12px;"" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
+											<a href="#" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
+							
+										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
+										<div class="clearfix">&nbsp;</div>
+										<div>
+										<img src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										</div>
+										
+										
+                                     </div>
+                                     </div>
+                                     </div>
+                                
+                            </article>
+				 
+					 
+ 					 
+                </div>
 				
-					<?php foreach($lastest_updates_list as $list){ ?>
+				
+		
+		</div>
+		<?php if(isset($journals_list) && count($journals_list)>0){ ?>
+		<div class="row">
+		
+                   <div class="text-center">
+					  <h2 class="" style="padding:0px;margin:0px;">OUR JOURNALS    
+					</h2>
+					<div style="position:relative ;" class="">
+												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
+												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
+											</div>
+											<div class="clearfix">&nbsp;</div>
+                                         </div>
+					 
+				</div> 
+				<br>
+				
+	    <div class="ab_class">
+        <div class="">
+             <div class="">
+               <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+            <!-- Indicators -->
+			 <ol class="carousel-indicators">
+					<?php $cnt=1;foreach($journals_list as $lists){ ?>
+				   
+					<?php if($cnt==1){ ?>
+						<li data-target="#bootstrap-touch-slider" data-slide-to="<?php echo $cnt; ?>" class="active"></li>
 						
-						<ul>
-						  <li style="padding:0px 0px 0px 10px">
-							 <!--<span style="font-size:15px; font-weight:bold">Global Journal of Addiction & Rehabilitation Medicine</span><br>-->
-							 <a href="javascript:void(0);" style=" color:#000; text-decoration:none; padding:0px; margin:0px; font-weight:normal"><?php echo isset($list['updates'])?$list['updates']:''; ?></a><br>
-						  </li>
-					   </ul>
-					   <p style="border-bottom:none; color: #05658F; text-decoration: none; font-weight: bold;">
-						  <span style="color: #05658F; text-decoration: none; font-weight: bold;"><a href="javascript:void(0);" > <?php echo isset($list['title'])?$list['title']:''; ?></a></span>
-					  
-						 <p style="border-bottom:1px thin #ff9933; padding-top:0px"></p>					  
-					  
-					  
+					<?php }else{ ?>
+						<li data-target="#bootstrap-touch-slider" data-slide-to="<?php echo $cnt; ?>"></li>
 					<?php } ?>
-				<?php } ?>
-            </marquee>
-            
-         </div>
-      </div>
-	   <!-- Widget Start -->
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Submit Manuscript</h3>
-         <div class="cp-newsletter-holder">
-           <a href="<?php echo base_url('menuscript');?>"> <img class="img-responsive" src="<?php echo base_url(); ?>assets/vendor/img/Medical-Journals.jpg" alt="submit Manuscript"></a>
-         </div>
-      </div>
-      <!-- Widget Start -->
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Track Your Article</h3>
-         <div class="cp-newsletter-holder">
-            <!-- Post Comments Form -->
-            <div class="cp-comments-form">
-               <form method="post" id="trackarticleform" class="material" action="#">
-                  <div class="material-input input"><input type="text" name="trackmanuscriptid" class="form-control" placeholder="Enter Manuscript ID" style="width:100%;" onkeypress="return checkspecial_menuscript(event);" required="" id="trackmanuscriptid"><span class="material-bar"></span></div>
-                  <span class="error_msg"></span>           
-                  <div class="material-input input"><input type="email" name="trackemail" class="form-control" placeholder="Enter Email" style="width:100%;" onkeypress="return checkspecialname(event);" required="" id="trackemail"><span class="material-bar"></span></div>
-                  <span class="error_msg"></span> 
-                  <input type="submit" name="btntrackarticle" id="btntrackarticle" value="Submit" class="btn btn-large" style="float:right;">
-               </form>
-            </div>
-            <!-- Page content End --> 
-         </div>
-      </div>
-      <!-- Widget End --> 
-      <!-- Widget Start -->
-      <!-- Widget End --> 
-      <!--Featured Post Widget Start -->
-     
-     
-      <!-- Widget Start -->
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Sign up For Newsletter</h3>
-         <div class="cp-newsletter-holder">
-            <!-- Post Comments Form -->
-            <div class="cp-comments-form">
-               <form name="newsletters" id="signupnews" class="material" method="post" action="<?php echo base_url('home/newsletterpost'); ?>" novalidate="novalidate">
-                  <div class="material-input input"><input type="text" name="name" class="form-control" placeholder="Name*" style="width:100%;" required  id="txtFirstName"><span class="material-bar"></span></div>
-                  <span class="error_msg"></span>           
-                  <div class="material-input input"><input type="email" name="email" class="form-control" placeholder="Email*" style="width:100%;" required  id="txtEmail"><span class="material-bar"></span></div>
-                  <span class="error_msg"></span>
-                  <input type="submit" name="btnSign" id="btnSign" value="Submit" class="btn btn-large" style="float:right;">
-               </form>
-            </div>
-            <!-- Page content End --> 
-         </div>
-      </div>
-      <!-- Widget End --> 
-      <!-- Tags Start -->
-      <div class="widget tags-widget">
-         <h3 class="side-title">Browse by Subject</h3>
-         <div class="cp-sidebar-content">
-		 <?php //echo '<pre>';print_r($browse_by_subjects);exit; ?>
-		  <?php if(isset($browse_by_subjects)&& count($browse_by_subjects)>0){ ?>
+				   
+					<?php $cnt++;} ?>
+			</ol>
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Third Slide -->
+				<?php $count=0;foreach($journals_list as $list){ ?>
 				
-					<?php foreach($browse_by_subjects as $list){ ?>
-						
-							<a href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>" ><?php echo isset($list['subject'])?$list['subject']:''; ?></a>
-					<?php } ?>
-					<?php } ?>
-           
-         </div>
-      </div>
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Latest Article Scrolling</h3>
-         <div class="cp-newsletter-holder" id="pubmed">
-            <marquee class="pubmed-articles" align="top" behavior="scroll" onmouseout="this.start();" onmouseover="this.stop();" direction="up" scrollamount="2" style="padding: 10px 0px 10px 0px;height: 200px;background: #f5f5f5;overflow:hidden;">
-               </p>
-					   <?php if(isset($article_list)&& count($article_list)>0){ ?>
+				<?php //echo '<pre>';print_r($list);exit; ?>
 				
-					<?php foreach($article_list as $list){ ?>
-					   <ul>
-						  <li style="padding:0px 0px 0px 10px">
-							 <!--<span style="font-size:15px; font-weight:bold">Global Journal of Addiction & Rehabilitation Medicine</span><br>-->
-							 <a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" style=" color:#000; text-decoration:none; padding:0px; margin:0px; font-weight:normal"><?php echo isset($list['title'])?$list['title']:''; ?></a><br>
-						  </li>
-					   </ul>
-					   <p style="border-bottom:none; color: #05658F; text-decoration: none; font-weight: bold;">
-						  <span style="color: #05658F; text-decoration: none; font-weight: bold;">Author Name: <a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" > <?php echo isset($list['author_name'])?$list['author_name']:''; ?></a></span>
-					   <p style="border-bottom:1px thin #ff9933; padding-top:0px"></p>
-					<?php } ?>
+				<?php if($count==0){ ?>
+						<div class="item active">
+						<?php if(isset($list[0]) && count($list[0])>0){ ?>
+							<div class="col-md-4 mt20">
+									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[0]['baneer_image']); ?>" alt="<?php echo isset($list[0]['alt_tags'])?$list[0]['alt_tags']:''; ?>" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											 <h4>
+															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[0]['title'])?$list[0]['title']:''; ?></a></h4>
+															
+											</div>
+																					<div class="clearfix">&nbsp;</div>
+
+											  <div class="blog-grid-supplemental" style="text-align:center">
+														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+												 </div>
+													
+											 </article>
+				 
+					 
+ 					 
+							</div>
+						<?php } ?>	
+						<?php if(isset($list[1]) && count($list[1])>0){ ?>
+							<div class="col-md-4 mt20">
+									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[1]['baneer_image']); ?>" alt="<?php echo isset($list[1]['alt_tags'])?$list[1]['alt_tags']:''; ?>" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											 <h4>
+															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[1]['title'])?$list[1]['title']:''; ?></a></h4>
+															
+											</div>
+																					<div class="clearfix">&nbsp;</div>
+
+											  <div class="blog-grid-supplemental" style="text-align:center">
+														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+												 </div>
+													
+											 </article>
+				 
+					 
+ 					 
+							</div>
+						<?php } ?>
+						<?php if(isset($list[2]) && count($list[2])>0){ ?>
+							<div class="col-md-4 mt20">
+									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[2]['baneer_image']); ?>" alt="<?php echo isset($list[2]['alt_tags'])?$list[2]['alt_tags']:''; ?>" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											 <h4>
+															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[2]['title'])?$list[2]['title']:''; ?></a></h4>
+															
+											</div>
+																					<div class="clearfix">&nbsp;</div>
+
+											  <div class="blog-grid-supplemental" style="text-align:center">
+														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+												 </div>
+													
+											 </article>
+				 
+					 
+ 					 
+							</div>
+						<?php } ?>							
+						</div>
+				<?php }else{ ?>
+						<div class="item">
+							<?php if(isset($list[0]) && count($list[0])>0){ ?>
+							<div class="col-md-4 mt20">
+									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[0]['baneer_image']); ?>" alt="<?php echo isset($list[0]['alt_tags'])?$list[0]['alt_tags']:''; ?>" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											 <h4>
+															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[0]['title'])?$list[0]['title']:''; ?></a></h4>
+															
+											</div>
+																					<div class="clearfix">&nbsp;</div>
+
+											  <div class="blog-grid-supplemental" style="text-align:center">
+														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+												 </div>
+													
+											 </article>
+				 
+					 
+ 					 
+							</div>
+						<?php } ?>	
+						<?php if(isset($list[1]) && count($list[1])>0){ ?>
+							<div class="col-md-4 mt20">
+									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[1]['baneer_image']); ?>" alt="<?php echo isset($list[1]['alt_tags'])?$list[1]['alt_tags']:''; ?>" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											 <h4>
+															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[1]['title'])?$list[1]['title']:''; ?></a></h4>
+															
+											</div>
+																					<div class="clearfix">&nbsp;</div>
+
+											  <div class="blog-grid-supplemental" style="text-align:center">
+														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+												 </div>
+													
+											 </article>
+				 
+					 
+ 					 
+							</div>
+						<?php } ?>
+						<?php if(isset($list[2]) && count($list[2])>0){ ?>
+							<div class="col-md-4 mt20">
+									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[2]['baneer_image']); ?>" alt="<?php echo isset($list[2]['alt_tags'])?$list[2]['alt_tags']:''; ?>" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											 <h4>
+															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[2]['title'])?$list[2]['title']:''; ?></a></h4>
+															
+											</div>
+																					<div class="clearfix">&nbsp;</div>
+
+											  <div class="blog-grid-supplemental" style="text-align:center">
+														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+												 </div>
+													
+											 </article>
+				 
+					 
+ 					 
+							</div>
+						<?php } ?>			
+						</div>
 				<?php } ?>
-            </marquee>
-            
-         </div>
-      </div>
-      <!-- Facebook End --> 
-   </div>
-</div>
+				<?php $count++;} ?>
+                <!-- End of Slide -->
 
 
-            </div>
+
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+             </div>
+         </div>
+		</div> 
+		
+				
+				
+				
+
+	</div>
+ <?php } ?>				
+		<div class="clearfix">&nbsp;</div>
+		<!--<div class="row">
+		<!-- Carousel -->
+					<!--<div id="theme-carousel" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<!--<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<div class="row">
+								
+									<div class="col-md-4 " style="padding:20px 10px;">
+										<div class="thumbnail">
+											<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											<h2>SAVE LIFE ADOPT A PET</h2>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 " style="padding:20px 10px;">
+										<div class="thumbnail">
+											<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											<h2>SAVE LIFE ADOPT A PET</h2>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 " style="padding:20px 10px;">
+										<div class="thumbnail">
+											<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+											<hr>
+											<div class="pad-x20" style="text-align:center">
+											<h2>SAVE LIFE ADOPT A PET</h2>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+											</div>
+										</div>
+									</div>
+									
+										
+								</div>
+								
+							</div>
+						   
+							
+							<div class="item">
+								<img src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+								<div class="carousel-caption">
+									<div class="row">
+									  
+										<div class="col-md-12">
+											<h2>ANIMALS NEED THE SUPPORT</h2>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+											<br />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Controls -->
+						<!--<a class="left carousel-control" href="#theme-carousel" role="button" data-slide="prev">
+							<div class="carousel-control-arrow">&#8249;</div>
+						</a>
+						<a class="right carousel-control" href="#theme-carousel" role="button" data-slide="next">
+							<div class="carousel-control-arrow">&#8250;</div>
+						</a>
+    </div>
+		</div>-->
+		
           
         </div><!--property container-->
-        <div class="divide40"></div>
+		
+		
+		
+		<!-- indexing-->
+		<br>
+		
+		<div class="row" style="background-color:#00bcd4;;color:#fff">
+            <div class="col-md-12">
+				 <div class="video-block categories-tabs" style="margin-top:0px;"> 
+					<h2 class="video-block__title text-white" style="text-align: center;padding:20px 5px;">We are <strong> Indexed in…</strong></h2>
+						<marquee behavior="scroll" >
+							 <div class="marquee-with-options" style="height:115px;"><div style="width: 100000px; margin-left: 0px; animation: 33.8737s linear 0s infinite normal none running marqueeAnimation-35405920;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 6px; float: left;">	
+          <ul data-wow-duration="2s" class="nav nav-tabs wow bounceInRight" style="width: 100%; visibility: visible; animation-duration: 2s; animation-name: bounceInRight;">
+	    
+	                      <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Genamics" src="http://www.texilajournal.com/thumbs/journalindex/Genamics.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Academia.edu" src="http://www.texilajournal.com/thumbs/journalindex/Academia.edu.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="ACademic Krey" src="http://www.texilajournal.com/thumbs/journalindex/ACademic-Krey.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="IARC" src="http://www.texilajournal.com/thumbs/journalindex/IARC.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="I2OR" src="http://www.texilajournal.com/thumbs/journalindex/i2or.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Research Journal Impact Factor" src="http://www.texilajournal.com/thumbs/journalindex/RJIF.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Google Scholar" src="http://www.texilajournal.com/thumbs/journalindex/Google-Scholar.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="GIF" src="http://www.texilajournal.com/thumbs/journalindex/c_15.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Tei" src="http://www.texilajournal.com/thumbs/journalindex/c_14.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Inno Space" src="http://www.texilajournal.com/thumbs/journalindex/c_13.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="SIS" src="http://www.texilajournal.com/thumbs/journalindex/c_12.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Pak Academic" src="http://www.texilajournal.com/thumbs/journalindex/c_11.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="OAJI" src="http://www.texilajournal.com/thumbs/journalindex/c_10.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="JIFactor" src="http://www.texilajournal.com/thumbs/journalindex/c_9.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="International society" src="http://www.texilajournal.com/thumbs/journalindex/c_8.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="IISS" src="http://www.texilajournal.com/thumbs/journalindex/c_7.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="ESJI" src="http://www.texilajournal.com/thumbs/journalindex/c_6.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Research Bib" src="http://www.texilajournal.com/thumbs/journalindex/c_5.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Open Access" src="http://www.texilajournal.com/thumbs/journalindex/c_4.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Jour Infortec" src="http://www.texilajournal.com/thumbs/journalindex/c_3.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="DRJI" src="http://www.texilajournal.com/thumbs/journalindex/c_2.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="International Scientific Indexing" src="http://www.texilajournal.com/thumbs/journalindex/IMF.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Cosmos" src="http://www.texilajournal.com/thumbs/journalindex/c_1.jpg" class="img-responsive" width="200" height="100"></div></li>
+                 
+          </ul>
+          </div><div class="js-marquee" style="margin-right: 6px; float: left;">	
+          <ul data-wow-duration="2s" class="nav nav-tabs wow bounceInRight" style="width: 100%; visibility: visible; animation-duration: 2s; animation-name: bounceInRight;">
+	    
+	                      <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Genamics" src="http://www.texilajournal.com/thumbs/journalindex/Genamics.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Academia.edu" src="http://www.texilajournal.com/thumbs/journalindex/Academia.edu.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="ACademic Krey" src="http://www.texilajournal.com/thumbs/journalindex/ACademic-Krey.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="IARC" src="http://www.texilajournal.com/thumbs/journalindex/IARC.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="I2OR" src="http://www.texilajournal.com/thumbs/journalindex/i2or.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Research Journal Impact Factor" src="http://www.texilajournal.com/thumbs/journalindex/RJIF.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Google Scholar" src="http://www.texilajournal.com/thumbs/journalindex/Google-Scholar.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="GIF" src="http://www.texilajournal.com/thumbs/journalindex/c_15.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Tei" src="http://www.texilajournal.com/thumbs/journalindex/c_14.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Inno Space" src="http://www.texilajournal.com/thumbs/journalindex/c_13.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="SIS" src="http://www.texilajournal.com/thumbs/journalindex/c_12.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Pak Academic" src="http://www.texilajournal.com/thumbs/journalindex/c_11.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="OAJI" src="http://www.texilajournal.com/thumbs/journalindex/c_10.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="JIFactor" src="http://www.texilajournal.com/thumbs/journalindex/c_9.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="International society" src="http://www.texilajournal.com/thumbs/journalindex/c_8.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="IISS" src="http://www.texilajournal.com/thumbs/journalindex/c_7.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="ESJI" src="http://www.texilajournal.com/thumbs/journalindex/c_6.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Research Bib" src="http://www.texilajournal.com/thumbs/journalindex/c_5.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Open Access" src="http://www.texilajournal.com/thumbs/journalindex/c_4.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Jour Infortec" src="http://www.texilajournal.com/thumbs/journalindex/c_3.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="DRJI" src="http://www.texilajournal.com/thumbs/journalindex/c_2.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="International Scientific Indexing" src="http://www.texilajournal.com/thumbs/journalindex/IMF.jpg" class="img-responsive" width="200" height="100"></div></li>
+                                <li class="list-clients__itema" style="border:none;background:rgba(0, 0, 0, 0);"><div class="nav__inner" style="border:none;"><img style="height:100px;border:4px solid #000;" alt="Cosmos" src="http://www.texilajournal.com/thumbs/journalindex/c_1.jpg" class="img-responsive" width="200" height="100"></div></li>
+                 
+          </ul>
+          </div></div></div> 
+	    <br>
+							   
+							   </marquee>
+				     <div class="video-block__subtitle" style="text-align: center;">Indexation of a journal is considered a reflection of its quality. And Increase the visibility thereby promoting their increased usage and impact.</div>
 
-       
-       
-        
-         <div class="divide40"></div>
-        
-         
-         
-         
-         <div class="search-filter">
-            <div class="container">
-                    <div class="row">
-                       
-                       <div class="col-md-10 col-xs-12">
-                           <h3>Bibliotics Journals</h3>
-                           <p>Bibliotics Journals is an emerging scientific online open access publisher keeping a goal to serve professional and academic communities in latest research discoveries and developments.</p>
-                       </div>  
-                       <div class="col-md-2 col-xs-12 text-center padding_0">
-                           <a href="<?php echo base_url('contactus'); ?>" class="btn btn-red btn-lg btn-block ">CONTACT US</a>
-                       </div>
-                       <!--  <div class="col-md-3 col-sm-6 margin20">
-                            <a href="#" class="btn btn-red btn-lg btn-block"><i class="fa fa-search"></i>Search</a>
-                        </div> -->
-                    </div>
-               
-            </div>
-        </div>
+				</div>
+			</div>
+		</div>
+		
 		

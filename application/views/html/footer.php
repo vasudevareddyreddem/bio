@@ -1,18 +1,10 @@
 <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 margin30">
-                     <h3 class="">FOLLOW US</h3>
-                        <ul class="list-unstyled">
-                            
-                            <li><a href="#" target="_blank">Face Book</a></li>
-                            <li><a href="#" target="_blank">Twitter</a></li>
-                            <li><a href="#" target="_blank">Google +</a></li>
-                            <li><a href="#" target="_blank">Linkedin</a></li>
-                            <li><a href="#" target="_blank">Youtube</a></li>
-                            
-                        </ul>
+                    <div class="col-md-6 col-sm-6 margin30">
+                        An international publishing group of Science, Technology and Medicine that emerged in accordance to the demands of Scientific community, which offers a valuable platform for the authors and researchers to contribute their work that reaches the readers across the globe without any subscription barriers which brings latest advancement in Science and Technology which helps Scientific Community for further research.
                     </div>
+					
                    
                     <div class="col-md-3 col-sm-6 margin30">
                         <h3>QUICK LINKS</h3>
@@ -21,18 +13,12 @@
                              <li><a href="<?php echo base_url('contactus'); ?>">Contact Us</a></li>
                              <li><a href="<?php echo base_url('aboutus'); ?>">About Us</a></li>
                              <li><a href="<?php echo base_url('ebooks'); ?>">E-books</a></li>
-                             <li><a href="<?php echo base_url('menuscript'); ?>">Submit Manuscript</a></li>
+                             <li><a href="<?php echo base_url('manuscript'); ?>">Submit Manuscript</a></li>
                            
                         </ul>
                     </div> 
 					
-					<div class="col-md-3 col-sm-6 margin30">
-                        <h3>Contact Address	</h3>
-						<ul class="list-unstyled">
-						<li><a href="#">Bibliotics Journals , 10039 Sierra Grace Ln, Houston, TX-77089,USA</a></li>
-						</ul>
-                      
-                    </div>
+					
 					<div class="col-md-3 col-sm-6 margin30">
                         <h3>Contact Information	</h3>
                         <ul class="list-unstyled">

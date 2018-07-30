@@ -77,7 +77,7 @@
                     <div class="col-md-8 col-lg-8 hidden-xs ">
                         <div class="contact-info-blocks  hidden-xs ">
                            <marquee id='scroll_news' style="padding-top:50px" >
-										<div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();"><h4 class="text-primary"><?php echo isset($scroll_data['scroll_content'])?$scroll_data['scroll_content']:''; ?> </h4></div>
+										<div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();"><h4 class="text-primary"><?php //echo isset($scroll_data['scroll_content'])?$scroll_data['scroll_content']:''; ?> </h4></div>
 									</marquee>
                           
                         </div>
@@ -119,8 +119,9 @@
 						  <ul class="dropdown-menu">
 							<li><a href="<?php echo base_url('editors'); ?>">Editors</a></li>
 							<li><a href="<?php echo base_url('author-guidelines'); ?>">Authors</a></li>
-							<li><a href="<?php echo base_url('manuscript-guidelines'); ?>">Manuscript Guidelines</a></li>
-							<li><a href="<?php echo base_url('membership'); ?>">Membership</a></li>
+							<li><a href="<?php echo base_url('reviews'); ?>">Reviews</a></li>
+							<!--<li><a href="<?php echo base_url('manuscript-guidelines'); ?>">Manuscript Guidelines</a></li>
+							<li><a href="<?php echo base_url('membership'); ?>">Membership</a></li>-->
 							
 						  </ul>
 						</li>

@@ -18,9 +18,9 @@ class Issues_model extends CI_Model
 		return $insert_id = $this->db->insert_id();
 	}
 	public  function get_get_isseus_details($id){
-		$this->db->select('issues.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('issues');
+		$this->db->select('issues.*,journals.title as journaltitle,bibliotics_journal_category.category')->from('issues');
 		$this->db->join('journals ', 'journals.j_id = issues.journal_id', 'left');
-		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = issues.journal_cat_id', 'left');
+		$this->db->join('bibliotics_journal_category ', 'bibliotics_journal_category.c_id = issues.journal_cat_id', 'left');
 		$this->db->where('issues.id',$id);
         $return=$this->db->get()->row_array();
 			$article_list=$this->get_issues_wise_article_list($return['id']);
@@ -33,9 +33,9 @@ class Issues_model extends CI_Model
 		//echo '<pre>';print_r($data);exit;
 	}
 	public  function get_get_all_isseus_list($id){
-		$this->db->select('issues.*,journals.title as journaltitle,Bibliotics_journal_category.category')->from('issues');
+		$this->db->select('issues.*,journals.title as journaltitle,bibliotics_journal_category.category')->from('issues');
 		$this->db->join('journals ', 'journals.j_id = issues.journal_id', 'left');
-		$this->db->join('Bibliotics_journal_category ', 'Bibliotics_journal_category.c_id = issues.journal_cat_id', 'left');
+		$this->db->join('bibliotics_journal_category ', 'bibliotics_journal_category.c_id = issues.journal_cat_id', 'left');
 		$this->db->where('issues.create_by',$id);
         $return=$this->db->get()->result_array();
 		foreach($return as $list){

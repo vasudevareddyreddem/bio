@@ -88,7 +88,7 @@
 								<li><a onclick="show_boardmembers(1);" href="#tab3primary" data-toggle="tab"> Article In Press</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab4primary" data-toggle="tab">Current Issue</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab5primary" data-toggle="tab">Archive</a></li>
-								<li><a onclick="show_boardmembers(1);" href="#tab7primary" data-toggle="tab">Special Issue</a></li>
+								<li><a onclick="show_boardmembers(1);" href="#tab7primary" data-toggle="tab">Previous Issue</a></li>
 								
 							</ul>
 					</div>
@@ -166,8 +166,8 @@
 											<div class=""><?php echo isset($list['country'])?$list['country']:''; ?> </div>-->
 											
 											<div >
-											<a href="<?php echo base_url('journals/editors-profile/'.base64_encode($list['j_e_id'])); ?>" class="btn btn-success btn-sm text-center text-white">View More</a>
-											</div>
+											<!--<a href="<?php echo base_url('journals/editors-profile/'.base64_encode($list['j_e_id'])); ?>" class="btn btn-success btn-sm text-center text-white">View More</a>
+											--></div>
 										</div>
 									</div>
 								</div>
@@ -226,7 +226,7 @@
 											   <a href="<?php echo base_url('assets/article_in_press/'.$list['pdf_file']); ?>" target="_blank" class="btn btn-primary " style="font-size:12px;" download> <i class="fa fa-unlock-alt"></i>&nbsp; PDF</a>
 											</li>
 											<li>
-											   <a target="_blank" href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank" class="btn btn-warning " style="font-size:12px;"> <i class="fa fa-code" aria-hidden="true"></i> HTML</a>
+											   <a target="_blank" href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank" class="btn btn-warning " style="font-size:12px;"> <i class="fa fa-code" aria-hidden="true"></i> Abstract</a>
 											</li>
 											<li>
 											   <a href="javascript:void(0);" class="btn btn-success " style="font-size:12px;">  <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp; <?php echo date('M d ,Y',strtotime(htmlentities($list['create_at'])));?></a>
@@ -432,7 +432,7 @@
 			</div>
 			<div class="clearfix">&nbsp;</div>
 			
-			<div class="sidebar side-bar right-sidebar">
+			<!--<div class="sidebar side-bar right-sidebar">
 				<div class="widget sidebar-newsletter">
 				 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					     <div class="panel panel-default">
@@ -459,7 +459,7 @@
 						<!--<li class="list-group-item"><a target="_blank" href="https://gavinpublishers.com/assets/img/links/Mini-Review.pdf">Mini Review</a></li>
 						<li class="list-group-item"><a  target="_blank" href="https://gavinpublishers.com/assets/img/links/Letter-to-Editor.pdf">Letter to Editor</a></li>-->
 						 
-						</li>
+						<!--</li>
 					  </ul>
 					</div>
                 </div>
@@ -467,7 +467,7 @@
         </div>
 				</div>
 				</div>
-      </div>
+      </div>-->
 			</div>
 		</div>
 				

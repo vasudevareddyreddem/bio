@@ -44,7 +44,27 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-
+.pad-x20{
+	padding:20px !important;
+	
+}
+.text-white{
+	color:#fff !important;
+	
+}
+.border_bottom_content{
+	position: absolute;
+    background: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+	border-bottom:2px solid #000;
+  
+   left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 #team .card {
     border: none;
     background: #ffffff;
