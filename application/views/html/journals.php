@@ -31,30 +31,35 @@
 					        <div class="row">
 <!-- entry1 -->					<?php if(isset($journals_list) && count($journals_list)>0){ ?>
 								<?php foreach($journals_list as $list){ ?>
-						            <div class="col-lg-3 col-md-3 col-sm-6  text-center doc-item">
-				                        <div class="common-doctor animated fadeInUp clearfix ae-animation-fadeInUp">
+						            <div class="col-md-4 mt20">
+				
+		
+                    <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+					<div style="width:auto;height:385px;margin:10px;">
+                                	<img class="img-responsive "  src="<?php echo base_url('assets/banner_pics/'.$list['baneer_image']); ?>" alt="<?php echo isset($list['seo_title'])?$list['seo_title']:''; ?>" style="width: 100%">
+						</div>
+						<hr>
+						<div class="pad-x20" style="text-align:center;height:20px;">
+						 <h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>"><?php echo isset($list['title'])?$list['title']:''; ?></a></h4>
+                                        
+						</div>
+																<div class="clearfix">&nbsp;</div>
 
-					                        <ul class="list-inline social-lists animate">
-												<li><a href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>"><i class="fa fa-link" aria-hidden="true"></i> VIEW MORE</a></li>
-											</ul>
-
-	                                        <figure>
-								                    <img width="670" height="500" src="<?php echo base_url('assets/banner_pics/'.$list['baneer_image']); ?>" class="doc-img animate attachment-gallery-post-single wp-post-image img-responsive" alt="<?php echo isset($list['seo_title'])?$list['seo_title']:''; ?>"> 
-								            </figure>
-
-						                    <div class="text-content">
-						                        <h5><?php echo isset($list['title'])?$list['title']:''; ?></h5>
-						                        <!-- <div class="for-border"></div> -->
-						                       <!-- <h5><small>Dentist Title</small></h5>-->
-						                    </div>
-						                </div>
-						            </div>
+						  <div class="blog-grid-supplemental" style="text-align:center">
+									<a href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+							 </div>
+                                
+                         </article>
+				 
+					 
+ 					 
+                </div>
 									
 								<?php } ?>
 								<?php } ?>
-									
-								
-                                 
+
+
 									<div class="visible-sm clearfix margin-gap"></div>
 					      </div>
 					    </div>

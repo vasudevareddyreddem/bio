@@ -187,7 +187,7 @@
                                      </h3></div>
 										
                                         <h4>
-										 <a class="blog-grid-title-link" style="color:#5db1a5" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
                                         <div class="clearfix">&nbsp;</div>
 									
                                    <div class="blog-grid-supplemental">
@@ -232,7 +232,7 @@
                                      </h3></div>
 										
                                         <h4>
-										 <a class="blog-grid-title-link" style="color:#5db1a5" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
                                         
 									                                        <div class="clearfix">&nbsp;</div>
 
@@ -278,7 +278,7 @@
                                      </h3></div>
 										
                                         <h4>
-										 <a class="blog-grid-title-link" style="color:#5db1a5" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
                                         
 									                                        <div class="clearfix">&nbsp;</div>
 
@@ -307,7 +307,6 @@
 				
 		
 		</div>
-		<?php if(isset($journals_list) && count($journals_list)>0){ ?>
 		<div class="row">
 		
                    <div class="text-center">
@@ -323,201 +322,76 @@
 				</div> 
 				<br>
 				
-	    <div class="ab_class">
-        <div class="">
-             <div class="">
-               <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
-
-            <!-- Indicators -->
-			 <ol class="carousel-indicators">
-					<?php $cnt=1;foreach($journals_list as $lists){ ?>
-				   
-					<?php if($cnt==1){ ?>
-						<li data-target="#bootstrap-touch-slider" data-slide-to="<?php echo $cnt; ?>" class="active"></li>
-						
-					<?php }else{ ?>
-						<li data-target="#bootstrap-touch-slider" data-slide-to="<?php echo $cnt; ?>"></li>
-					<?php } ?>
-				   
-					<?php $cnt++;} ?>
-			</ol>
-            <!-- Wrapper For Slides -->
-            <div class="carousel-inner" role="listbox">
-
-                <!-- Third Slide -->
-				<?php $count=0;foreach($journals_list as $list){ ?>
+	    <div class="col-md-4 mt20">
 				
-				<?php //echo '<pre>';print_r($list);exit; ?>
+		
+                    <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+                                	<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+						<hr>
+						<div class="pad-x20" style="text-align:center">
+						 <h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+                                        
+						</div>
+																<div class="clearfix">&nbsp;</div>
+
+						  <div class="blog-grid-supplemental" style="text-align:center">
+									<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+							 </div>
+                                
+                         </article>
+				 
+					 
+ 					 
+                </div> <div class="col-md-4 mt20">
 				
-				<?php if($count==0){ ?>
-						<div class="item active">
-						<?php if(isset($list[0]) && count($list[0])>0){ ?>
-							<div class="col-md-4 mt20">
-									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[0]['baneer_image']); ?>" alt="<?php echo isset($list[0]['alt_tags'])?$list[0]['alt_tags']:''; ?>" style="width: 100%">
-											<hr>
-											<div class="pad-x20" style="text-align:center">
-											 <h4>
-															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[0]['title'])?$list[0]['title']:''; ?></a></h4>
-															
-											</div>
-																					<div class="clearfix">&nbsp;</div>
-
-											  <div class="blog-grid-supplemental" style="text-align:center">
-														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-												 </div>
-													
-											 </article>
-				 
-					 
- 					 
-							</div>
-						<?php } ?>	
-						<?php if(isset($list[1]) && count($list[1])>0){ ?>
-							<div class="col-md-4 mt20">
-									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[1]['baneer_image']); ?>" alt="<?php echo isset($list[1]['alt_tags'])?$list[1]['alt_tags']:''; ?>" style="width: 100%">
-											<hr>
-											<div class="pad-x20" style="text-align:center">
-											 <h4>
-															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[1]['title'])?$list[1]['title']:''; ?></a></h4>
-															
-											</div>
-																					<div class="clearfix">&nbsp;</div>
-
-											  <div class="blog-grid-supplemental" style="text-align:center">
-														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-												 </div>
-													
-											 </article>
-				 
-					 
- 					 
-							</div>
-						<?php } ?>
-						<?php if(isset($list[2]) && count($list[2])>0){ ?>
-							<div class="col-md-4 mt20">
-									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[2]['baneer_image']); ?>" alt="<?php echo isset($list[2]['alt_tags'])?$list[2]['alt_tags']:''; ?>" style="width: 100%">
-											<hr>
-											<div class="pad-x20" style="text-align:center">
-											 <h4>
-															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[2]['title'])?$list[2]['title']:''; ?></a></h4>
-															
-											</div>
-																					<div class="clearfix">&nbsp;</div>
-
-											  <div class="blog-grid-supplemental" style="text-align:center">
-														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-												 </div>
-													
-											 </article>
-				 
-					 
- 					 
-							</div>
-						<?php } ?>							
+		
+                    <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+                                	<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+						<hr>
+						<div class="pad-x20" style="text-align:center">
+						 <h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+                                        
 						</div>
-				<?php }else{ ?>
-						<div class="item">
-							<?php if(isset($list[0]) && count($list[0])>0){ ?>
-							<div class="col-md-4 mt20">
-									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[0]['baneer_image']); ?>" alt="<?php echo isset($list[0]['alt_tags'])?$list[0]['alt_tags']:''; ?>" style="width: 100%">
-											<hr>
-											<div class="pad-x20" style="text-align:center">
-											 <h4>
-															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[0]['title'])?$list[0]['title']:''; ?></a></h4>
-															
-											</div>
-																					<div class="clearfix">&nbsp;</div>
+																<div class="clearfix">&nbsp;</div>
 
-											  <div class="blog-grid-supplemental" style="text-align:center">
-														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-												 </div>
-													
-											 </article>
+						  <div class="blog-grid-supplemental" style="text-align:center">
+									<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+							 </div>
+                                
+                         </article>
 				 
 					 
  					 
-							</div>
-						<?php } ?>	
-						<?php if(isset($list[1]) && count($list[1])>0){ ?>
-							<div class="col-md-4 mt20">
-									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[1]['baneer_image']); ?>" alt="<?php echo isset($list[1]['alt_tags'])?$list[1]['alt_tags']:''; ?>" style="width: 100%">
-											<hr>
-											<div class="pad-x20" style="text-align:center">
-											 <h4>
-															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[1]['title'])?$list[1]['title']:''; ?></a></h4>
-															
-											</div>
-																					<div class="clearfix">&nbsp;</div>
-
-											  <div class="blog-grid-supplemental" style="text-align:center">
-														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-												 </div>
-													
-											 </article>
-				 
-					 
- 					 
-							</div>
-						<?php } ?>
-						<?php if(isset($list[2]) && count($list[2])>0){ ?>
-							<div class="col-md-4 mt20">
-									<article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-											<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list[2]['baneer_image']); ?>" alt="<?php echo isset($list[2]['alt_tags'])?$list[2]['alt_tags']:''; ?>" style="width: 100%">
-											<hr>
-											<div class="pad-x20" style="text-align:center">
-											 <h4>
-															 <a class="blog-grid-title-link" style="color:#5db1a5" href="#"><?php echo isset($list[2]['title'])?$list[2]['title']:''; ?></a></h4>
-															
-											</div>
-																					<div class="clearfix">&nbsp;</div>
-
-											  <div class="blog-grid-supplemental" style="text-align:center">
-														<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-												 </div>
-													
-											 </article>
-				 
-					 
- 					 
-							</div>
-						<?php } ?>			
+                </div> <div class="col-md-4 mt20">
+				
+		
+                    <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
+                                	<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+						<hr>
+						<div class="pad-x20" style="text-align:center">
+						 <h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+                                        
 						</div>
-				<?php } ?>
-				<?php $count++;} ?>
-                <!-- End of Slide -->
+																<div class="clearfix">&nbsp;</div>
 
-
-
-            </div><!-- End of Wrapper For Slides -->
-
-            <!-- Left Control -->
-            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
-                <span class="fa fa-angle-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <!-- Right Control -->
-            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
-                <span class="fa fa-angle-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-        </div>
-             </div>
-         </div>
-		</div> 
+						  <div class="blog-grid-supplemental" style="text-align:center">
+									<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+							 </div>
+                                
+                         </article>
+				 
+					 
+ 					 
+                </div> 
 		
 				
 				
 				
 
 	</div>
- <?php } ?>				
 		<div class="clearfix">&nbsp;</div>
 		<!--<div class="row">
 		<!-- Carousel -->
