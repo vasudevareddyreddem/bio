@@ -380,7 +380,7 @@ $(document).ready(function() {
 			image: {
                 validators: {
 					regexp: {
-					regexp: "(.*?)\.(doc|docx|html)$",
+					regexp: "(.*?)\.(jpg|png|jpeg)$",
 					message: 'Uploaded file is not a valid. Only doc,docx,html file are allowed'
 					}
 				}

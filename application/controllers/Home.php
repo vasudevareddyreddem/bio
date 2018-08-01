@@ -22,10 +22,8 @@ class Home extends CI_Controller {
 		$header['scroll_data']=$this->Home_model->get_scrolling_content();
 		$this->load->view('html/header',$header);
 		$data['homapage_banners']=$this->Home_model->get_home_banners_list();
-		$article_list=$this->Home_model->get_all_article_list();
-		$data['article_list']=array_chunk($article_list,'3');
-		$journals_list=$this->Home_model->get_all_journals_list();
-		$data['journals_list']=array_chunk($journals_list,'3');
+		$data['article_list']=$this->Home_model->get_homepage_all_article_list();
+		$data['journals_list']=$this->Home_model->get_limit_journals_list();
 		$data['lastest_updates_list']=$this->Home_model->get_latest_updates();
 		$data['browse_by_subjects']=$this->Home_model->get_browse_by_subjects();
 

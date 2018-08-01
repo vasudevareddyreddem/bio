@@ -152,7 +152,7 @@
 	
 				
                
-            
+         <?php if(isset($article_list) && count($article_list)>0){ ?>  
 		<div class="row">
 		
                    <div class="text-center">
@@ -165,86 +165,41 @@
 											<div class="clearfix">&nbsp;</div>
 					</div>
 					 
-				</div>                     
-                <div class="col-md-4 mt20">
+				</div> 
+
+				<?php foreach($article_list as $list){ ?>				
+								<div class="col-md-4 mt20">
 				
 		
                     <article class="blog-grid margin-b-10 article">
                                  <div class="blog-grid-box-shadow">
                                     <div class="blog-grid-content text-center" style="padding:20px;">
-										<em style="font-size:20px">Research Article </em><br>
-										<em style="font-size:20px">J Health Inform Mang 2018</em><br>
-										<em style="font-size:20px">10.4172/JHM.1000109</em>
+										<em style="font-size:20px"><?php echo isset($list['article_type'])?$list['article_type']:''; ?></em><br>
+										<em style="font-size:20px"><?php echo isset($list['author_name'])?$list['author_name']:''; ?></em><br>
+										<em style="font-size:20px"><?php echo date('M d ,Y',strtotime(htmlentities($list['create_at'])));?></em>
 										<div class="clearfix">&nbsp;</div>
 										<div style="position:relative ;" class="">
 												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
 												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
 											</div>
 											<div class="clearfix">&nbsp;</div>
-                                         <h3>
-                                        
-									
-                                     </h3></div>
+                                       
+									 </div>
 										
                                         <h4>
-										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
-                                        <div class="clearfix">&nbsp;</div>
-									
-                                   <div class="blog-grid-supplemental">
-										 
- 											<a href="#" class="btn btn-warning  text-white" style="font-size:12px;"" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
-											<a href="#" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
-							
-										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
-										<div class="clearfix">&nbsp;</div>
-										<div>
-										<img class="img-responsive " src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
-										</div>
-										
-										
-                                     </div>
-                                     </div>
-                                     </div>
-                                
-                            </article>
-				 
-					 
- 					 
-                </div>
-				<div class="col-md-4 mt20">
-				
-		
-                    <article class="blog-grid margin-b-10 article">
-                                 <div class="blog-grid-box-shadow">
-                                    <div class="blog-grid-content text-center" style="padding:20px;">
-										<em style="font-size:20px">Research Article </em><br>
-										<em style="font-size:20px">J Health Inform Mang 2018</em><br>
-										<em style="font-size:20px">10.4172/JHM.1000109</em>
-										<div class="clearfix">&nbsp;</div>
-										<div style="position:relative ;" class="">
-												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
-												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
-											</div>
-											<div class="clearfix">&nbsp;</div>
-                                         <h3>
-                                        
-									
-                                     </h3></div>
-										
-                                        <h4>
-										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>"><?php echo isset($list['title'])?$list['title']:''; ?></a></h4>
                                         
 									                                        <div class="clearfix">&nbsp;</div>
 
                                    <div class="blog-grid-supplemental">
 										 
- 											<a href="#" class="btn btn-warning  text-white" style="font-size:12px;"" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
-											<a href="#" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
+ 											<a target="_blank" href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
+											<a target="_blank" href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
 							
-										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
+										<a href="<?php echo base_url('assets/article_in_press/'.$list['pdf_file']); ?>" target="_blank" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
 										<div class="clearfix">&nbsp;</div>
-										<div>
-										<img  class="img-responsive " src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										<div style="width:auto;height:250px;">
+										<img  class="img-responsive " src="<?php echo base_url('assets/article_in_press/'.$list['image']); ?>" alt="<?php echo isset($list['title'])?$list['title']:''; ?>">
 										</div>
 										
 										
@@ -257,56 +212,15 @@
 					 
  					 
                 </div>
-				<div class="col-md-4 mt20">
+								
+								
+				<?php } ?>
 				
-		
-                    <article class="blog-grid margin-b-10 article">
-                                 <div class="blog-grid-box-shadow">
-                                    <div class="blog-grid-content text-center" style="padding:20px;">
-										<em style="font-size:20px">Research Article </em><br>
-										<em style="font-size:20px">Reddem vasudevareddy </em><br>
-										<em style="font-size:20px">2018 july 12</em>
-										<div class="clearfix">&nbsp;</div>
-										<div style="position:relative ;" class="">
-												<div style="width:300px;border-bottom:2px solid #000;margin:0 auto"> &nbsp;</div>
-												<div style="position:absolute;background:#000;width:20px;height:20px; border-radius:50%;border:5px solid #fff;top:10px;left:50%">
-											</div>
-											<div class="clearfix">&nbsp;</div>
-                                         <h3>
-                                        
-									
-                                     </h3></div>
-										
-                                        <h4>
-										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
-                                        
-									                                        <div class="clearfix">&nbsp;</div>
-
-                                   <div class="blog-grid-supplemental">
-										 
- 											<a href="#" class="btn btn-warning  text-white" style="font-size:12px;"" style="border-radius:5px;border-color:#555;color:#555">Abstract</a> 
-											<a href="#" class="btn btn-success text-white" style="border-radius:5px;border-color:#555;color:#555">Full Text</a>
-							
-										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
-										<div class="clearfix">&nbsp;</div>
-										<div>
-										<img class="img-responsive " src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
-										</div>
-										
-										
-                                     </div>
-                                     </div>
-                                     </div>
-                                
-                            </article>
-				 
-					 
- 					 
-                </div>
-				
-				
-		
 		</div>
+		
+		<?php } ?>
+		
+		<?php if(isset($journals_list) && count($journals_list)>0){ ?>
 		<div class="row">
 		
                    <div class="text-center">
@@ -321,64 +235,22 @@
 					 
 				</div> 
 				<br>
-				
-	    <div class="col-md-4 mt20">
+				<?php foreach($journals_list as $list){ ?>
+					<div class="col-md-4 mt20">
 				
 		
                     <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-                                	<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
+                                	<img class="img-responsive " src="<?php echo base_url('assets/banner_pics/'.$list['baneer_image']); ?>" alt="<?php echo isset($list['seo_title'])?$list['seo_title']:''; ?>" style="width: 100%">
 						<hr>
 						<div class="pad-x20" style="text-align:center">
 						 <h4>
-										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
+										 <a class="blog-grid-title-link" style="color:#00bcd4" href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>"><?php echo isset($list['title'])?$list['title']:''; ?></a></h4>
                                         
 						</div>
 																<div class="clearfix">&nbsp;</div>
 
 						  <div class="blog-grid-supplemental" style="text-align:center">
-									<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-							 </div>
-                                
-                         </article>
-				 
-					 
- 					 
-                </div> <div class="col-md-4 mt20">
-				
-		
-                    <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-                                	<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
-						<hr>
-						<div class="pad-x20" style="text-align:center">
-						 <h4>
-										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
-                                        
-						</div>
-																<div class="clearfix">&nbsp;</div>
-
-						  <div class="blog-grid-supplemental" style="text-align:center">
-									<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
-							 </div>
-                                
-                         </article>
-				 
-					 
- 					 
-                </div> <div class="col-md-4 mt20">
-				
-		
-                    <article class="blog-grid margin-b-10 article" style="padding:20px 10px;">
-                                	<img class="img-responsive " src="http://localhost/bio/assets/article_in_press/1532759347.png" alt="carousel3" style="width: 100%">
-						<hr>
-						<div class="pad-x20" style="text-align:center">
-						 <h4>
-										 <a class="blog-grid-title-link" style="color:#00bcd4" href="#">The Visual Analogue scale: An easy and reliable way of assessing perceived stress</a></h4>
-                                        
-						</div>
-																<div class="clearfix">&nbsp;</div>
-
-						  <div class="blog-grid-supplemental" style="text-align:center">
-									<a href="#" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
+									<a href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>" class="btn btn-warning  text-white" style="font-size:12px;" style="border-radius:5px;border-color:#555;color:#555">Read  More</a> 
 							 </div>
                                 
                          </article>
@@ -386,12 +258,10 @@
 					 
  					 
                 </div> 
-		
-				
-				
-				
-
-	</div>
+				<?php } ?>
+		</div>
+	
+	<?php } ?>
 		<div class="clearfix">&nbsp;</div>
 		<!--<div class="row">
 		<!-- Carousel -->
