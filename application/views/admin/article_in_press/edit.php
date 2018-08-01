@@ -112,8 +112,28 @@
 							<div class="form-group">
 								<label class=" control-label">Article Type</label>
 								<div class="">
-									<input type="text" class="form-control" name="article_type" value="<?php echo isset($details['article_type'])?$details['article_type']:''; ?>" id="article_type" placeholder="Enter Article Type" />
-								</div>
+<select name="article_type" id="article_type" required class="form-control selectpicker">
+                                								<option value="">Select Article type</option>
+								                                <option value='Editorial' <?php if($details['article_type']=="Editorial"){ echo "selected"; }?>>Editorial</option>
+																<option value='Research Article' <?php if($details['article_type']=="Research Article"){ echo "selected"; }?>>Research Article</option>
+																<option value='Case Report' <?php if($details['article_type']=="Case Report"){ echo "selected"; }?>>Case Report</option>
+																<option value='Review Article' <?php if($details['article_type']=="Review Article"){ echo "selected"; }?>>Review Article</option>
+																<option value='Short Article' <?php if($details['article_type']=="Short Article"){ echo "selected"; }?>>Short Article</option>
+																<option value='Short Communication' <?php if($details['article_type']=="Short Communication"){ echo "selected"; }?>>Short Communication</option>
+																<option value='Letter to Editor' <?php if($details['article_type']=="Letter to Editor"){ echo "selected"; }?>>Letter to Editor</option>
+																<option value='Commentry' <?php if($details['article_type']=="Commentry"){ echo "selected"; }?>>Commentry</option>
+																<option value='Conference Proceeding' <?php if($details['article_type']=="Conference Proceeding"){ echo "selected"; }?>>Conference Proceeding</option>
+																<option value='Rapid Communication' <?php if($details['article_type']=="Rapid Communication"){ echo "selected"; }?>>Rapid Communication</option>
+																<option value='Special Issue Article' <?php if($details['article_type']=="Special Issue Article"){ echo "selected"; }?>>Special Issue Article</option>
+																<option value='Annual Meeting Abstract' <?php if($details['article_type']=="Annual Meeting Abstract"){ echo "selected"; }?>>Annual Meeting Abstract</option>
+																<option value='Meeting Report' <?php if($details['article_type']=="Meeting Report"){ echo "selected"; }?>>Meeting Report</option>
+																<option value='Proceedings' <?php if($details['article_type']=="Proceedings"){ echo "selected"; }?>>Proceedings</option>
+																<option value='Expert Review' <?php if($details['article_type']=="Expert Review"){ echo "selected"; }?>>Expert Review</option>
+																<option value='Case Blogs' <?php if($details['article_type']=="Case Blogs"){ echo "selected"; }?>>Case Blogs</option>
+																<option value='Powerpoint Presentation' <?php if($details['article_type']=="Powerpoint Presentation"){ echo "selected"; }?>>Powerpoint Presentation</option>
+																<option value='Flowchart Presentation' <?php if($details['article_type']=="Flowchart Presentation"){ echo "selected"; }?>>Flowchart Presentation</option>
+																<option value='Image' <?php if($details['article_type']=="Image"){ echo "selected"; }?>>Image</option>
+							  </select>								</div>
 							</div>
                         </div>
 						<div class="col-md-6">

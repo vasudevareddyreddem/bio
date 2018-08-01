@@ -99,7 +99,28 @@
 							<div class="form-group">
 								<label class=" control-label">Article Type</label>
 								<div class="">
-									<input type="text" class="form-control" name="article_type" value="" id="article_type" placeholder="Enter Article Type" />
+								<select name="article_type" id="article_type" required class="form-control selectpicker">
+                                								<option value="">Select Article type</option>
+								                                <option value='Editorial'>Editorial</option>
+																<option value='Research Article'>Research Article</option>
+																<option value='Case Report'>Case Report</option>
+																<option value='Review Article'>Review Article</option>
+																<option value='Short Article'>Short Article</option>
+																<option value='Short Communication'>Short Communication</option>
+																<option value='Letter to Editor'>Letter to Editor</option>
+																<option value='Commentry'>Commentry</option>
+																<option value='Conference Proceeding'>Conference Proceeding</option>
+																<option value='Rapid Communication'>Rapid Communication</option>
+																<option value='Special Issue Article'>Special Issue Article</option>
+																<option value='Annual Meeting Abstract'>Annual Meeting Abstract</option>
+																<option value='Meeting Report'>Meeting Report</option>
+																<option value='Proceedings'>Proceedings</option>
+																<option value='Expert Review'>Expert Review</option>
+																<option value='Case Blogs'>Case Blogs</option>
+																<option value='Powerpoint Presentation'>Powerpoint Presentation</option>
+																<option value='Flowchart Presentation'>Flowchart Presentation</option>
+																<option value='Image'>Image</option>
+							  </select>
 								</div>
 							</div>
                         </div>

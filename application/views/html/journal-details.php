@@ -1,4 +1,21 @@
-     <?php if(isset($homapage_banners) && count($homapage_banners)>0){ ?>
+     
+	   <style>
+  .html-tabs li {
+	  display:block;
+	  float:none;
+	  border-bottom:1px solid #fff;
+	  margin:20px 0px;
+	  background:#ddd;
+  } 
+  .html-tabs li > a {
+
+	  border:0px;
+  }
+  .my-20{
+	  margin:20px 0px;
+  }
+  </style>
+	 <?php if(isset($homapage_banners) && count($homapage_banners)>0){ ?>
 	<div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
 
             <!-- Indicators -->
@@ -78,25 +95,26 @@
 		 <?php } ?>
 		<div class="container " >
             <div class="row">
-				<div class="col-md-9">
-					<div class="bg_color2">
-						<ul class="nav nav-tabs">
+				<div class=" col-md-3">
+							<ul class="nav nav-tabs html-tabs">
 								<li class="active"><a onclick="show_boardmembers(1);" href="#tab1primary" data-toggle="tab">Home</a></li>
-																<li><a onclick="show_boardmembers(1);" href="#tab6primary" data-toggle="tab">Instructions</a></li>
+								<li><a onclick="show_boardmembers(1);" href="#tab6primary" data-toggle="tab">Instructions</a></li>
 
-								<li><a onclick="show_boardmembers(0);" href="#tab2primary" data-toggle="tab"> Board Members</a></li>
-								<li><a onclick="show_boardmembers(1);" href="#tab3primary" data-toggle="tab"> Article In Press</a></li>
+								<li><a onclick="show_boardmembers(0);" href="#tab2primary" data-toggle="tab">Editorial board</a></li>
+								<li><a onclick="show_boardmembers(1);" href="#tab3primary" data-toggle="tab">Article In Press</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab4primary" data-toggle="tab">Current Issue</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab5primary" data-toggle="tab">Archive</a></li>
 								<li><a onclick="show_boardmembers(1);" href="#tab7primary" data-toggle="tab">Previous Issue</a></li>
 								
 							</ul>
 					</div>
-					<br>
+				<div class="col-md-9">
+					
 					<div class="panel-body">
 						<div class="tab-content">
 							<div class="tab-pane fade in active" id="tab1primary">
-							 <div class=" Welcome_txt fadeInLeft wow animated  " data-wow-duration="1000ms" data-wow-delay="1000ms">
+							 <!--<div class=" Welcome_txt fadeInLeft wow animated  " data-wow-duration="1000ms" data-wow-delay="1000ms">-->
+							 <div class=" Welcome_txt wow animated  ">
                   
 					<br>
 					<?php echo isset($journals_details['description'])?$journals_details['description']:''; ?>
@@ -371,104 +389,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 mt20">
-   <div class="sidebar side-bar right-sidebar" id="board_member" style="display:none;">
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Review Board Members</h3>
-         <div class="cp-newsletter-holder" id="pubmed">
-            <marquee class="pubmed-articles" align="top" behavior="scroll" onmouseout="this.start();" onmouseover="this.stop();" direction="up" scrollamount="2" style="padding: 10px 0px 10px 0px;height: 200px;background: #f5f5f5;overflow:hidden;">
-               <?php //echo '<pre>';print_r($board_members);exit; ?>
-			   <?php if(isset($reviewer_boardmembers) && count($reviewer_boardmembers)>0){ ?>
-				<?php foreach($reviewer_boardmembers as $list){ ?>
-					   <ul>
-						  <li style="padding:0px 0px 0px 10px">
-							 <!--<span style="font-size:15px; font-weight:bold">Global Journal of Addiction & Rehabilitation Medicine</span><br>-->
-							 <a href="<?php echo base_url('journals/view/'.base64_encode($list['j_id']).'/'.$list['seo_url']); ?>" target="_blank" style=" color:#000; text-decoration:none; padding:0px; margin:0px; font-weight:normal"><?php echo isset($list['journaltitile'])?$list['journaltitile']:''; ?> </a><br>
-						  </li>
-					   </ul>
-					   <p style="border-bottom:none; color: #05658F; text-decoration: none; font-weight: bold;">
-						  <span style="color: #05658F; text-decoration: none; font-weight: bold;">Name: <a href="<?php echo base_url('journals/board_profile/'.base64_encode($list['id'])); ?>" target="_blank"> <?php echo isset($list['name'])?$list['name']:''; ?></a></span>
-					   </p>
-					   <p style="border-bottom:1px thin #ff9933; padding-top:0px"></p>
-				   <?php } ?>
-			   <?php }else{ ?>
-			    <p style="border-bottom:none; color: #05658F; text-decoration: none; font-weight: bold;">
-						  <span style="color: #05658F; text-decoration: none; font-weight: bold;"> Comming Soon</a></span>
-					   </p>
-			  
-			   <?php } ?>
-               
-            </marquee>
-            
-         </div>
-      </div>
-			</div>
-			<div class="clearfix">&nbsp;</div>
-			<div class="sidebar side-bar right-sidebar" id="article_latest">
-      <div class="widget sidebar-newsletter">
-         <h3 class="side-title">Latest Article</h3>
-         <div class="cp-newsletter-holder" id="pubmed">
-            <marquee class="pubmed-articles" align="top" behavior="scroll" onmouseout="this.start();" onmouseover="this.stop();" direction="up" scrollamount="2" style="padding: 10px 0px 10px 0px;height: 200px;background: #f5f5f5;overflow:hidden;">
-               
-			   <?php if(isset($lastest_article) && count($lastest_article)>0){ ?>
-				<?php foreach($lastest_article as $list){ ?>
-					   <ul>
-						  <li style="padding:0px 0px 0px 10px">
-							 <!--<span style="font-size:15px; font-weight:bold">Global Journal of Addiction & Rehabilitation Medicine</span><br>-->
-							 <a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank" style=" color:#000; text-decoration:none; padding:0px; margin:0px; font-weight:normal"><?php echo isset($list['title'])?$list['title']:''; ?> </a><br>
-						  </li>
-					   </ul>
-					   <p style="border-bottom:none; color: #05658F; text-decoration: none; font-weight: bold;">
-						  <span style="color: #05658F; text-decoration: none; font-weight: bold;"><a href="<?php echo base_url('article/view/'.base64_encode($list['a_id']).'/'.$list['url']); ?>" target="_blank"> <?php echo isset($list['article_type'])?$list['article_type']:''; ?></a></span>
-					   </p>
-					   <p style="border-bottom:1px thin #ff9933; padding-top:0px"></p>
-				   <?php } ?>
-			   <?php } ?>
-               
-            </marquee>
-            
-         </div>
-      </div>
-			</div>
-			<div class="clearfix">&nbsp;</div>
-			
-			<!--<div class="sidebar side-bar right-sidebar">
-				<div class="widget sidebar-newsletter">
-				 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					     <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" >
-                       <i class="more-less glyphicon glyphicon-plus"></i> Quick Links
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                   <div class="">
-					  <ul class="list-group">
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url('home/for_author'); ?> " >For Authors</a></li>
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url('home/quick_editors'); ?>">For Editors</a></li>
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url('home/reviewers'); ?>">For Reviewers</a></li>    
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url(); ?>assets/vendor/quick-links/editorial.pdf">Editorial</a></li>
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url(); ?>assets/vendor/quick-links/research-article.pdf">Research Article</a></li>
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url(); ?>assets/vendor/quick-links/case-report.pdf">Case Report</a></li>
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url(); ?>assets/vendor/quick-links/review-article.pdf">Review Article</a></li>  
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url(); ?>assets/vendor/quick-links/opinion.pdf">Opinion</a></li>
-						<li class="list-group-item"><a target="_blank" href="<?php echo base_url(); ?>assets/vendor/quick-links/short-communication.pdf">Short Communication</a></li>
-						<!--<li class="list-group-item"><a target="_blank" href="https://gavinpublishers.com/assets/img/links/Mini-Review.pdf">Mini Review</a></li>
-						<li class="list-group-item"><a  target="_blank" href="https://gavinpublishers.com/assets/img/links/Letter-to-Editor.pdf">Letter to Editor</a></li>-->
-						 
-						<!--</li>
-					  </ul>
-					</div>
-                </div>
-            </div>
-        </div>
-				</div>
-				</div>
-      </div>-->
-			</div>
+				
 		</div>
 				
 			</div>

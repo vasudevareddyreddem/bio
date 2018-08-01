@@ -1,19 +1,18 @@
-  <style>
-  .html-tabs li {
-	  display:block;
-	  float:none;
-	  border-bottom:1px solid #fff;
-	  margin:20px 0px;
-	  background:#ddd;
-  } 
-  .html-tabs li > a {
+<style>
+.col-md-2{
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px !important;
+	 color: #fff !important;
+	
+}
+.bg_color3 {
+    background-color: #00bcd4;
+    color: #fff !important;
+}
 
-	  border:0px;
-  }
-  .my-20{
-	  margin:20px 0px;
-  }
-  </style>
+</style>
 		<div class="container " >
             <div class="row">
 				<div class="col-md-12">
@@ -23,19 +22,20 @@
 				
 				</div>
 				<div class="clearfix">&nbsp;</div>
-				<div class="col-md-12 thumbnail">
-					<div class=" col-md-3">
-							<ul class="nav nav-tabs html-tabs">
-								<li class="active"><a href="#tab1primary" data-toggle="tab">Abstract</a></li>
-								<li><a href="#tab2primary" data-toggle="tab"> Article</a></li>
-								<li><a href="#tab3primary" data-toggle="tab"> Figures</a></li>
-								<li><a href="#tab4primary" data-toggle="tab">Tables</a></li>
-								<li><a href="#tab5primary" data-toggle="tab">References</a></li>
-								<li><a href="#tab6primary" data-toggle="tab">Suggested Citation</a></li>
+					
+					<div class="col-md-12">
+					<div class="bg_color3  text-center">
+						<ul class="nav nav-tabs">
+								<li class="active col-md-2 "><a class="text-white" href="#tab1primary" data-toggle="tab">Abstract</a></li>
+								<li class="col-md-2" ><a class="text-white" href="#tab2primary" data-toggle="tab"> Article</a></li>
+								<li class="col-md-2"><a class="text-white" href="#tab3primary" data-toggle="tab"> Figures</a></li>
+								<li class="col-md-2"><a class="text-white" href="#tab4primary" data-toggle="tab">Tables</a></li>
+								<li class="col-md-2"><a class="text-white" href="#tab5primary" data-toggle="tab">References</a></li>
+								<li class="col-md-2"><a class="text-white" href="#tab6primary" data-toggle="tab">Suggested Citation</a></li>
 								
 							</ul>
 					</div>
-					<div class="col-md-9">
+					<br>
 					<div class="panel-body">
 						<div class="tab-content">
 							<div class="tab-pane fade in active" id="tab1primary">
@@ -88,7 +88,7 @@
 						</div>
 					</div>
 				</div>
-				</div>
+				
 				
 		</div>
 				

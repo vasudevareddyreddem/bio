@@ -198,7 +198,7 @@
 										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
 										<div class="clearfix">&nbsp;</div>
 										<div>
-										<img src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										<img class="img-responsive " src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
 										</div>
 										
 										
@@ -244,7 +244,7 @@
 										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
 										<div class="clearfix">&nbsp;</div>
 										<div>
-										<img src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										<img  class="img-responsive " src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
 										</div>
 										
 										
@@ -290,7 +290,7 @@
 										<a href="#" class="btn btn-danger text-white" style="border-radius:5px;border-color:#555;color:#555">Pdf</a>
 										<div class="clearfix">&nbsp;</div>
 										<div>
-										<img src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
+										<img class="img-responsive " src="http://localhost/bio/assets/vendor/img/heart.png" alt="recent">
 										</div>
 										
 										
